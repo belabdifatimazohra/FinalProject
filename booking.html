@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> </title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Link to awesome font -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!-- DatePicker -->
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+
+    <!-- bootstrap CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- CSS style -->
+    <style>
+        /* .datepicker,
+        .table-condensed {
+            width: 20%;
+        } */
+
+        .datepicker-dropdown {
+            top: 0;
+            left: 0;
+            padding: 4px;
+            background-color: #50839e;
+            border-radius: 10px;
+            /* text-align: center; */
+        }
+
+
+
+        .datepicker table tr td,
+        .datepicker table tr th {
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            border: none;
+            color: #000000;
+        }
+
+        .datepicker table tr td.day:hover,
+        .datepicker table tr td.focused {
+            background: #555555;
+            cursor: pointer;
+        }
+
+        .datepicker table tr td.old,
+        .datepicker table tr td.new {
+            color: #79d70f;
+        }
+
+        .datepicker table tr td.today {
+            color: #000000;
+            background-color: #79d70f;
+            border-color: #ffb76f;
+        }
+
+        .datepicker table tr td.today:hover {
+            color: #ffffff;
+            background-color: #79d70f;
+            border-color: #79d70f;
+        }
+
+        .datepicker table tr td.active:active,
+        .datepicker table tr td.active.highlighted:active,
+        .datepicker table tr td.active.active,
+        .datepicker table tr td.active.highlighted.active,
+        .open>.dropdown-toggle.datepicker table tr td.active,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted {
+            color: #ffffff;
+            background-color: #419841;
+            border-color: #285e8e;
+        }
+
+        .datepicker table tr td.active:active:hover,
+        .datepicker table tr td.active.highlighted:active:hover,
+        .datepicker table tr td.active.active:hover,
+        .datepicker table tr td.active.highlighted.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,
+        .datepicker table tr td.active:active:focus,
+        .datepicker table tr td.active.highlighted:active:focus,
+        .datepicker table tr td.active.active:focus,
+        .datepicker table tr td.active.highlighted.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,
+        .datepicker table tr td.active:active.focus,
+        .datepicker table tr td.active.highlighted:active.focus,
+        .datepicker table tr td.active.active.focus,
+        .datepicker table tr td.active.highlighted.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus {
+            color: #ffffff;
+            background-color: #79d70f;
+            border-color: #193c5a;
+        }
+
+        .datepicker table tr td.active:active,
+        .datepicker table tr td.active.highlighted:active,
+        .datepicker table tr td.active.active,
+        .datepicker table tr td.active.highlighted.active,
+        .open>.dropdown-toggle.datepicker table tr td.active,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted {
+            color: #ffffff;
+            background-color: #79d70f;
+            border-color: #285e8e;
+        }
+
+        .datepicker table tr td.active:active:hover,
+        .datepicker table tr td.active.highlighted:active:hover,
+        .datepicker table tr td.active.active:hover,
+        .datepicker table tr td.active.highlighted.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,
+        .datepicker table tr td.active:active:focus,
+        .datepicker table tr td.active.highlighted:active:focus,
+        .datepicker table tr td.active.active:focus,
+        .datepicker table tr td.active.highlighted.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,
+        .datepicker table tr td.active:active.focus,
+        .datepicker table tr td.active.highlighted:active.focus,
+        .datepicker table tr td.active.active.focus,
+        .datepicker table tr td.active.highlighted.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus {
+            color: #ffffff;
+            background-color: #285e8e;
+            border-color: #193c5a;
+        }
+
+        .datepicker .datepicker-switch {
+            width: 150px;
+        }
+
+        .datepicker .datepicker-switch:hover,
+        .datepicker .prev:hover,
+        .datepicker .next:hover,
+        .datepicker tfoot tr th:hover {
+            background: #f4f4f4;
+        }
+
+        .btn {
+            background-color: #79d70f;
+            border: none;
+            border-radius: 0%;
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".input-group.date").datepicker({
+                orientation: "auto left",
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                toggleActive: true,
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Semantic Tag Header -->
+    <header>
+        <div class="logo">
+            <img src="res/logo_FZ.png" alt="logo">
+
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="index.html">Rencontre moi</a> </li>
+                <li><a href="index.html">FitZone</a></li>
+                <li><a href="index.html">Plans et prix</a></li>
+                <li><a class="active" href="reservation.html">Réservation en ligne</a></li>
+                <li><a href="index.html">Contact</a></li>
+
+            </ul>
+            <div class="logIn-btn">
+                <a class="link" href="login.html">
+                    <i class="fa fa-user-circle" style="font-size:24px; color:#79d70f;"></i>
+                    <span>Log In</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Semantic Tag Main -->
+    <main>
+        <section class="section-reserve">
+            <div class="reserve">
+                <h1>
+                    Réservation en ligne
+                </h1>
+
+            </div>
+            <div>
+                <p>Êtes-vous prêt à changer votre mode de vie,<br>
+                    avoir une vie plus équilibré, énergitique.<br>
+                    Reserver votre coaching avec Fatima Zohra <br>
+                    <br>
+                    <b style="color:  #79d70f;"> &#147; Votre santè votre choix &#147;</b>
+                <p>
+            </div>
+            <!-- Datepicker  -->
+            <div style=" height: auto; display: flex;">
+                <div style="flex: 2; margin: 6%; ">
+
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="py-4 text-center"><i class="fa fa-calendar fa-2x"></i></div>
+
+                            <!-- Date Picker Input -->
+                            <div class="form-group mb-3">
+                                <div class="datepicker date input-group p-0 shadow-sm">
+                                    <input type="text" placeholder="Choose a reservation date"
+                                        class="form-control py-4 px-4" id="reservationDate">
+                                    <div class="input-group-append">
+                                        <!-- <span class="input-group-text py-4  px-4 shadow-sm">
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </span> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Date Picker Input -->
+
+                            <!-- For Demo Purpose -->
+                            <div class="text-center">
+                                <p class="font-italic text-muted mb-0"> Votre reservation</p>
+                                <h4 id="pickedDate" class="font-weight-bold text-uppercase mb-3">One to One </h4>
+                                <a href="#"
+                                    class="btn btn-primary btn-sm px-4 rounded-pill text-uppercase font-weight-bold shadow-sm">
+                                    Valider</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div style="flex: 1; margin: 6%; border: solid 2px #79d70f;">
+                    <div class="fit-zone">
+                        <div>
+                            <span> Coaching Créatif</span>
+                        </div>
+                        <p> One-on-one coaching <br> avec <br>Fatima Zohra <br><br>
+
+                        </p>
+                        <!-- <div>
+                            <a href="#" class="btn-lire" style="background-color: #79d70f;">
+                                Valider
+                            </a>
+                        </div> -->
+                        <div style="margin-top: 10%; ">
+                            <span style="font-size: 14px;">Déjà membre?</span>
+                            <a class="link" href="login.html" style=" display: inline-block;">
+                                <i class="fa fa-user-circle" style="font-size:20px; color:#79d70f;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Contact  -->
+        <section id="contact">
+            <div class="contact">
+                <div class="font_1" style="color: #253C57; font-size: 30px; ">
+
+                    <h2> Contactez Nous </h2>
+                    <span style=" background-color: #6decb9;">
+
+                        Pour plus d'information particulière
+                    </span>
+                </div>
+                <div class="info-contact">
+                    <input type="text" value="" placeholder="Prénom">
+                    <input type="text" value="" placeholder="Nom">
+                    <input type="text" value="" placeholder="Email">
+                    <textarea placeholder="Saisissiez votre  votre message">
+                    </textarea>
+                    <div class=" submit-btn" style="margin-left:20%;background-color: #253C57;">
+                        SUBMIT
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <!-- Semantic Tag footer -->
+    <footer>
+
+        <span> © 2020 Fit Zone </span>
+    </footer>
+
+
+    <!-- bootstrap CSS/JS File -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JS Date Picker -->
+    <script src="js/bootstrap-datepicker.min.js"></script>
+
+
+    <!-- DatePicker Script -->
+    <script>
+        // Pour la langue francaise
+        (function ($) {
+            $.fn.datepicker.dates["fr"] = {
+                days: [
+                    "dimanche",
+                    "lundi",
+                    "mardi",
+                    "mercredi",
+                    "jeudi",
+                    "vendredi",
+                    "samedi",
+                ],
+                daysShort: ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+                daysMin: ["d", "l", "ma", "me", "j", "v", "s"],
+                months: [
+                    "janvier",
+                    "février",
+                    "mars",
+                    "avril",
+                    "mai",
+                    "juin",
+                    "juillet",
+                    "août",
+                    "septembre",
+                    "octobre",
+                    "novembre",
+                    "décembre",
+                ],
+                monthsShort: [
+                    "janv.",
+                    "févr.",
+                    "mars",
+                    "avril",
+                    "mai",
+                    "juin",
+                    "juil.",
+                    "août",
+                    "sept.",
+                    "oct.",
+                    "nov.",
+                    "déc.",
+                ],
+                today: "Aujourd'hui",
+                monthsTitle: "Mois",
+                clear: "Effacer",
+                weekStart: 1,
+                format: "dd/mm/yyyy",
+            };
+        })(jQuery);
+
+        $(".datepicker").datepicker({
+            language: "fr",
+            autoclose: true,
+            todayHighlight: true,
+        });
+        $("#datepicker").datepicker();
+        $("#datepicker").on("changeDate", function () {
+            $("#my_hidden_input").val(
+                $("#datepicker").datepicker("getFormattedDate"),
+            );
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".datepicker").datepicker({
+                orientation: "auto left",
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                toggleActive: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
