@@ -158,19 +158,18 @@
             background-color: #79d70f;
             border: none;
             border-radius: 0%;
+            text-justify: center;
+        }
+
+        .btn:hover {
+            background-color: #79d70f;
+            border: none;
+            border-radius: 0%;
+            text-justify: center;
+        }
     </style>
 
-    <script type="text/javascript">
-        $(function () {
-            $(".input-group.date").datepicker({
-                orientation: "auto left",
-                forceParse: false,
-                autoclose: true,
-                todayHighlight: true,
-                toggleActive: true,
-            });
-        });
-    </script>
+
 </head>
 
 <body>
@@ -218,12 +217,39 @@
                 <p>
             </div>
             <!-- Datepicker  -->
-            <div style=" height: auto; display: flex;">
-                <div style="flex: 2; margin: 6%; ">
+            <div
+                style=" height: auto; display: flex; align-items: center; justify-content: center; border: solid 2px #79d70f;   border-radius: 2px;
+  box-shadow: -2px 0px 33px 2px #c2cac7;;margin: 10%;">
+                <div style="flex: 1; margin: 6%; ">
+                    <div class="py-4 text-center"><i class="fa fa-calendar fa-2x"></i>
+                        <p class="font-italic text-muted mb-0">
+                            Reservation pour </p>
+                    </div>
+                    <div class="fit-zone">
+
+                        <h4 id="pickedDate" class="font-weight-bold text-uppercase mb-3">
+                            Coaching Créatif<br> One-on-one coaching </h4>
+                        <p class="font-italic text-muted mb-0"> avec Fatima Zohra </p>
+
+                        <!-- <div>
+                            <a href="#" class="btn-lire" style="background-color: #79d70f;">
+                                Valider
+                            </a>
+                        </div> -->
+                        <div style="margin-top: 10%; ">
+                            <span style="font-size: 14px;">Déjà membre?</span>
+                            <a class="link" href="login.html" style=" display: inline-block;">
+                                <i class="fa fa-user-circle" style="font-size:20px; color:#79d70f;"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div style="flex: 1; margin: 6%; ">
 
                     <div class="row">
                         <div class="col-md-6 mx-auto">
-                            <div class="py-4 text-center"><i class="fa fa-calendar fa-2x"></i></div>
+
 
                             <!-- Date Picker Input -->
                             <div class="form-group mb-3">
@@ -251,27 +277,7 @@
 
                     </div>
                 </div>
-                <div style="flex: 1; margin: 6%; border: solid 2px #79d70f;">
-                    <div class="fit-zone">
-                        <div>
-                            <span> Coaching Créatif</span>
-                        </div>
-                        <p> One-on-one coaching <br> avec <br>Fatima Zohra <br><br>
 
-                        </p>
-                        <!-- <div>
-                            <a href="#" class="btn-lire" style="background-color: #79d70f;">
-                                Valider
-                            </a>
-                        </div> -->
-                        <div style="margin-top: 10%; ">
-                            <span style="font-size: 14px;">Déjà membre?</span>
-                            <a class="link" href="login.html" style=" display: inline-block;">
-                                <i class="fa fa-user-circle" style="font-size:20px; color:#79d70f;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -316,6 +322,17 @@
     <script src="js/bootstrap-datepicker.min.js"></script>
 
 
+    <script>
+        $(function () {
+            $(".input-group.date").datepicker({
+                orientation: "auto left",
+                forceParse: false,
+                autoclose: true,
+                todayHighlight: true,
+                toggleActive: true,
+            });
+        });
+    </script>
     <!-- DatePicker Script -->
     <script>
         // Pour la langue francaise
