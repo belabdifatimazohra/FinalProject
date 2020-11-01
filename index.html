@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <title> Fit Zone</title>
     <!-- CSS File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
@@ -17,17 +18,18 @@
 
     <!-- Semantic Tag Header -->
     <header>
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="res/logo_FZ.png" alt="logo">
 
         </div>
         <nav class="navbar">
             <ul>
-                <li > <a href="#accueil" class="active">Accueil</a></li>
+                <li> <a href="#accueil" class="active">Accueil</a></li>
                 <li> <a href="#rencontre">Rencontre moi</a> </li>
                 <li><a href="#fitzone">FitZone</a></li>
                 <li><a href="#plans">Plans et prix</a></li>
-                <li><a href="reservation.html">Réservation en ligne</a></li>
+              
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
@@ -36,6 +38,53 @@
                     <i class="fa fa-user-circle" style="font-size:24px; color:#79d70f;"></i>
                     <span>Log In</span>
                 </a>
+            </div>
+        </nav> -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark  static-top" style="background-color: black;">
+
+            <a class="navbar-brand" href="#">
+                <img src="res/logo_FZ.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rencontre">Rencontre moi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fitzone">FitZone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Plans et prix</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Nutrition
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Recette Healthy</a>
+                            <a class="dropdown-item" href="#">Calcul de macro</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fa fa-user-circle"
+                                style="font-size:24px; color:#79d70f;"></i></a>
+                    </li>
+
+                </ul>
             </div>
         </nav>
     </header>
@@ -50,9 +99,11 @@
                     <p> <span>Découvrez votre pouvoir grâce au coaching en ligne </span></p>
                     <div class="social">
 
-                       <a href="https://www.facebook.com/fatimazohra.belabdi/"  target="_blank"> <i class="fa fa-facebook"></i> </a>
-                       <a href="https://www.instagram.com/floura_bel/"  target="_blank"><i class="fa fa-instagram"></i></a>
-                       <a href="https://twitter.com/BelabdiFatima"  target="_blank"> <i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/fatimazohra.belabdi/" target="_blank"> <i
+                                class="fa fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/floura_bel/" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/BelabdiFatima" target="_blank"> <i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
                 <div style="flex:2; text-align:end">
@@ -67,21 +118,21 @@
             <div class="container_2">
                 <div class="box-1">
                     <img src="res/profil-2.jpg" alt="profile-photo">
-                 </div>
+                </div>
 
-                    <div class="box-3">
-                        <h2 class="font_1">
-                            <span>Je suis Fatima Zohra</span>
-                        </h2>
-                        <p class="font_2"> Coach sportif certifiée
+                <div class="box-3">
+                    <h2 class="font_1">
+                        <span>Je suis Fatima Zohra</span>
+                    </h2>
+                    <p class="font_2"> Coach sportif certifiée
 
-                        </p>
-                        <p class="font_2" style="font-size: 16px;">
-                           Depuis mon enfance je voulais comprendre comment
-                           mon corps, mon métabolisme fonctionnent et comment
-                           je peux améliorer non seulement ma santé physique,
-                           mais aussi ma santé mentale.
-                            <!-- comme beaucoup d'autres
+                    </p>
+                    <p class="font_2" style="font-size: 16px;">
+                        Depuis mon enfance je voulais comprendre comment
+                        mon corps, mon métabolisme fonctionnent et comment
+                        je peux améliorer non seulement ma santé physique,
+                        mais aussi ma santé mentale.
+                        <!-- comme beaucoup d'autres
                            femmes que je coach maintenant.
                            J'ai pu améliorer considérablement ma composition corporelle
                             en appliquant ce que j'ai appris. Une fois que 
@@ -90,51 +141,52 @@
                             et mon niveau d'énergie, j'ai décidé de compléter
                              la qualification sur la nutrition afin d'élargir
                               mes compétences sur le bien être -->
-                        </p>
-                        <!-- En savoir plus sur fatima zohra -->
-                        <a class="btn-lire" style="border-color    : #fff;
+                    </p>
+                    <!-- En savoir plus sur fatima zohra -->
+                    <a class="btn-lire" style="border-color    : #fff;
        color           : black;
        background-color: #6decb9;
        border          : solid 1px;">
-                            Lire la suite
-
-                        </a>
-                    </div>
-                </div>
-        </section>
-
-        <!-- Section FitZone -->
-        <section id="fitzone">
-            <div class="container_3">
-                <div class="box-4"></div>
-                <div class="box-5" ">
-                <h2 class=" font_1" style="color: black;">
-                    <span> Fit Zone </span>
-                    </h2>
-                    <p class="font_2" style="color: black;">
-                        Votre santé Votre choix
-
-                    </p>
-            <p>
-                    
-                    Nous vous aidons à adopter une routine de remise en forme 
-                    durable qu'ils aiment.
-                    Nous aidons les gens à retrouver confiance en eux, 
-                    à surmonter les blessures et à éliminer les insécurités
-                     en étant motivés à s'entraîner dur et à manger des aliments sains et nutritifs.
-                    <br>Nous savons que lorsque vous vous sentez fort physiquement,
-                    vous développez une force mentale qui se prolonge dans le reste de votre vie. 
-                    <br>Laissez-nous vous aider à atteindre cet objectif.
-                        
-                    </p>
-                    <!-- En savoir plus sur fatima zohra -->
-                    <a class="btn-lire">
                         Lire la suite
 
                     </a>
                 </div>
             </div>
         </section>
+
+        <!-- Section FitZone -->
+        <section id="fitzone">
+            <div class="container_3">
+                <div class="box-4"></div>
+                <div class="box-5">
+                    <h2 class=" font_1" style="color: black;">
+                        <span> Fit Zone </span>
+                    </h2>
+                    <p class="font_2" style="color: black;">
+                        Votre santé Votre choix
+
+                    </p>
+                    <p>
+
+                        Nous vous aidons à adopter une routine de remise en forme
+                        durable qu'ils aiment.
+                        Nous aidons les gens à retrouver confiance en eux,
+                        à surmonter les blessures et à éliminer les insécurités
+                        en étant motivés à s'entraîner dur et à manger des aliments sains et nutritifs.
+                        <br>Nous savons que lorsque vous vous sentez fort physiquement,
+                        vous développez une force mentale qui se prolonge dans le reste de votre vie.
+                        <br>Laissez-nous vous aider à atteindre cet objectif.
+
+                    </p>
+                    <!-- En savoir plus sur fatima zohra -->
+                    <a class="btn-lire" href="">
+                        Lire la suite
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Plans et prix -->
         <section id="plans">
             <div class="container_4">
@@ -144,11 +196,11 @@
                         <img src="res/FitZone/personal-trainer.jpg" alt="personal-teraner">
                     </div>
                     <div class="font_3">
-                        <h2>Entraineur Personnel</h2>
-                        <h1>Spécifique</h1>
+                        <h4>Entraineur Personnel</h4>
+                        <h6>Spécifique</h6>
                     </div>
                     <div>
-                        <a class="btn-lire">
+                        <a class="btn-lire" href="">
                             Reserver
                         </a>
                     </div>
@@ -161,11 +213,11 @@
                         <img src="res/FitZone/Fit-programme.jpg" alt="personal-teraner">
                     </div>
                     <div class="font_3">
-                        <h2> Programme Fit Zone</h2>
-                        <h1> Par catégorie </h1>
+                        <h4> Programme Fit Zone</h4>
+                        <h6> Par catégorie </h6>
                     </div>
                     <div>
-                        <a class="btn-lire">
+                        <a class="btn-lire" href="">
                             Reserver
                         </a>
                     </div>
@@ -174,16 +226,16 @@
 
                 <!-- Fit Zone  club -->
 
-                <div class="fit-zone">
+                <div class="fit-zone ">
                     <div>
                         <img src="res/FitZone/Fit-club.jpg" alt="fit zone club">
                     </div>
                     <div class="font_3">
-                        <h2>Fit Zone club</h2>
-                        <h1>Rejoinez Nous</h1>
+                        <h4>Fit Zone club</h4>
+                        <h6>Rejoinez Nous</h6>
                     </div>
                     <div>
-                        <a class="btn-lire">
+                        <a class="btn-lire" href=""> 
                             Reserver
                         </a>
                     </div>
@@ -191,10 +243,7 @@
             </div>
         </section>
 
-        <!-- Réservation en ligne -->
-        <section id="reserve">
-
-        </section>
+      
 
         <!-- Contact  -->
         <section id="contact">
@@ -211,7 +260,7 @@
                     <input type="text" value="" placeholder="Prénom">
                     <input type="text" value="" placeholder="Nom">
                     <input type="text" value="" placeholder="Email">
-                    <textarea  placeholder="Saisissiez votre  votre message">
+                    <textarea placeholder="Saisissiez votre  votre message">
                     </textarea>
                     <div class=" submit-btn" style="margin-left:20%;background-color: #253C57;">
                         SUBMIT
@@ -227,7 +276,9 @@
 
         <span> © 2020 Fit Zone </span>
     </footer>
-
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
 </body>
 
 </html>
