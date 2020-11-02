@@ -1,13 +1,11 @@
 /** @format */
 
 body {
-  margin: 0;
+  margin : 0;
   padding: 0;
 }
 
-main {
-  margin-top: 0px;
-}
+
 
 /* 
 header {
@@ -81,110 +79,112 @@ a .logIn-btn {
 .dropdown-menu {
   background-color: black;
 }
+
 .dropdown-item {
   color: #ffffff;
 }
+
 /* Log in menu item style */
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width           : 100%;
+  height          : 100vh;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
   background-color: #f0f3f7;
 }
 
 .content {
-  width: 60%;
-  height: 70%;
-  display: flex;
+  width           : 60%;
+  height          : 70%;
+  display         : flex;
   background-color: white;
-  border-radius: 2px;
-  box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
-  transition: 0.4s;
+  border-radius   : 2px;
+  box-shadow      : -2px 0px 33px 4px rgba(117, 117, 117, 1);
+  transition      : 0.4s;
 }
 
 .right {
-  height: 100%;
-  flex: 1;
-  display: flex;
+  height         : 100%;
+  flex           : 1;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  align-items    : center;
+  flex-direction : column;
 }
 
 .left {
-  height: 100%;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../res/img_login.jpeg");
+  height             : 100%;
+  flex               : 1;
+  display            : flex;
+  justify-content    : center;
+  align-items        : center;
+  background-image   : url("../res/img_login.jpeg");
   background-position: center;
-  background-size: contain;
+  background-size    : contain;
 }
 
 .info-contact input {
-  width: 80%;
+  width      : 80%;
   font-family: inherit;
-  height: 50px;
-  margin: 20px 0px;
-  font-size: 16px;
+  height     : 50px;
+  margin     : 20px 0px;
+  font-size  : 16px;
 }
 
 .title {
   font-size: 30px;
-  margin: 20px 0px;
+  margin   : 20px 0px;
 }
 
 .submit-btn {
   background-color: #79d70f;
-  border-radius: 2px;
-  color: white;
-  font-size: 20px;
-  height: 50px;
-  width: 60%;
-  margin: 30px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  border-radius   : 2px;
+  color           : white;
+  font-size       : 20px;
+  height          : 50px;
+  width           : 60%;
+  margin          : 30px 0px;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  cursor          : pointer;
 }
 
 .err {
-  font-size: 12px;
-  color: red;
+  font-size  : 12px;
+  color      : red;
   font-weight: 900;
 }
 
 .loged-in {
-  width: 60%;
-  height: 70%;
-  display: none;
+  width           : 60%;
+  height          : 70%;
+  display         : none;
   background-color: white;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  border-radius: 2px;
-  box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
-  font-size: 35px;
-  transition: 0.4s;
+  justify-content : center;
+  text-align      : center;
+  align-items     : center;
+  border-radius   : 2px;
+  box-shadow      : -2px 0px 33px 4px rgba(117, 117, 117, 1);
+  font-size       : 35px;
+  transition      : 0.4s;
 }
 
 /* Accueil */
 .accueil {
-  display: flex;
-  align-items: center;
+  width        : 100vw;
+  display      : flex;
+  flex-wrap    : nowrap;
+  align-items  : center;
   align-content: center;
-  height: 90vh;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(31, 207, 155, 0.9360119047619048) 0%,
-    rgba(147, 230, 240, 1) 33%,
-    rgba(231, 219, 229, 1) 100%
-  );
+  height       : 90vh;
+  background   : rgb(2, 0, 36);
+  background   : linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(31, 207, 155, 0.9360119047619048) 0%,
+      rgba(147, 230, 240, 1) 33%,
+      rgba(231, 219, 229, 1) 100%);
 }
 
 .accueil img {
@@ -193,8 +193,8 @@ a .logIn-btn {
 
 .div_accueil {
   padding: 100px;
-  color: #253c57;
-  flex: 1;
+  color  : #253c57;
+  flex   : 1;
 }
 
 .div_accueil h3 {
@@ -206,118 +206,122 @@ a .logIn-btn {
 }
 
 .social i.fa {
-  color: #79d70f;
-  width: 30px;
-  height: 30px;
-  border-radius: 60%;
-  text-align: center;
-  line-height: 20px;
-  vertical-align: middle;
-  padding: 4px;
+  color           : #79d70f;
+  width           : 30px;
+  height          : 30px;
+  border-radius   : 60%;
+  text-align      : center;
+  line-height     : 20px;
+  vertical-align  : middle;
+  padding         : 4px;
   background-color: #000;
 }
 
 /* Rencontre moi */
 .container_2 {
-  display: block;
-  max-width: 100vw;
-  min-height: 650px;
+  display            : block;
+  max-width          : 100vw;
+  min-height         : 650px;
   /* background-color: orange; */
-  padding: 1%;
+  padding            : 1%;
 }
 
 .box-1 {
-  margin: 5% 10%;
-  height: 50%;
-  display: block;
-  position: relative;
-  width: 50vw;
+  margin          : 5% 10%;
+  height          : 50%;
+  display         : block;
+  position        : relative;
+  width           : 50vw;
   background-color: #6decb9;
 }
 
 .box-1 img {
-  width: 50%;
-  height: 100%;
+  width     : 50%;
+  height    : 100%;
   object-fit: contain;
 }
 
 .box-3 {
-  display: block;
-  margin: -15% 40%;
-  padding: 40px;
-  width: 40%;
-  position: absolute;
+  display         : block;
+  margin          : -15% 40%;
+  padding         : 40px;
+  width           : 40%;
+  position        : absolute;
   background-color: #000000;
-  text-align: center;
-  max-height: fit-content;
+  text-align      : center;
+  max-height      : fit-content;
 }
 
 /* FitZone */
 .container_3 {
-  margin: 10% 0;
-  width: 100%;
-  min-height: 650px;
-  height: fit-content;
-  display: block;
-  font-family: "Roboto", sans-serif;
+  margin             : 10% 0;
+  width              : 100%;
+  min-height         : 650px;
+  height             : fit-content;
+  display            : block;
+  font-family        : "Roboto", sans-serif;
   /* background-color: yellow; */
 }
 
 .box-4 {
-  position: relative;
-  display: block;
-  background-image: url(../res/FitZone/FitZone.jpeg);
+  position         : relative;
+  display          : block;
+  background-image : url(../res/FitZone/FitZone.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
-  width: 50%;
-  left: 50%;
+  background-size  : contain;
+  height           : 400px;
+  width            : 50%;
+  left             : 50%;
 }
 
 .box-5 {
-  padding: 40px;
-  width: 40%;
-  position: absolute;
+  padding         : 40px;
+  width           : 40%;
+  position        : absolute;
   background-color: #6decb9;
-  text-align: center;
-  left: 20%;
-  margin: -10% 0;
+  text-align      : center;
+  left            : 20%;
+  margin          : -10% 0;
 }
 
 /* Plans et Prix */
 
 .container_4 {
-  margin: 0;
-  width: 100%;
+  margin          : 0;
+  width           : 100%;
   background-color: #f4f4f4;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  display         : flex;
+  flex-direction  : row;
+  justify-content : center;
+  flex-wrap       : wrap;
 }
 
 .fit-zone {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
+  display        : flex;
+  flex-direction : column;
+  flex-wrap      : wrap;
+  text-align     : center;
   justify-content: center;
-  padding: 30px;
+  padding        : 30px;
 }
 
 .fit-zone div:first-child {
   flex: 3;
 }
+
 .fit-zone :nth-child(2) {
   flex: 1;
 }
+
 .fit-zone :nth-child(3) {
   flex: 1;
 }
+
 .fit-zone img {
   border-bottom: solid 5px #6decb9;
-  object-fit: contain;
+  object-fit   : contain;
 }
+
 /* .fit-zone > div {
   height: 30%;
   width: 100%;
@@ -325,145 +329,203 @@ a .logIn-btn {
 /* reserve page */
 .section-reserve {
   text-align: center;
-  font: normal normal normal 18px/1.8em sans-serif;
-  color: #253c57;
-}
-.reserve {
-  margin-top: 60px;
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 30px;
-  height: auto;
+  font      : normal normal normal 18px/1.8em sans-serif;
+  color     : #253c57;
 }
 
-.reserve > h1 {
+.reserve {
+  margin-top      : 60px;
+  background-color: #f5f5f5;
+  text-align      : center;
+  padding         : 30px;
+  height          : auto;
+}
+
+.reserve>h1 {
   font: normal normal normal 75px/1.4em sans-serif;
 }
+
 .offres {
-  display: grid;
+  display              : grid;
   grid-template-columns: 30% 30% 30%;
-  justify-content: center;
-  height: auto;
-  gap: 20px;
+  justify-content      : center;
+  height               : auto;
+  gap                  : 20px;
 }
 
-.offres > div {
-  display: block;
-  position: relative;
+.offres>div {
+  display         : block;
+  position        : relative;
   background-color: #f5f5f5;
-  padding: 5%;
+  padding         : 5%;
 }
 
-.offres > div > span {
-  font: normal normal normal 26px/1.4em sans-serif;
+.offres>div>span {
+  font : normal normal normal 26px/1.4em sans-serif;
   color: #253c57;
 }
+
 /* contact */
 .contact {
-  margin: 50px 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  margin          : 50px 0;
+  display         : flex;
+  justify-content : center;
+  text-align      : center;
+  align-items     : center;
   background-color: #6decb9;
 }
 
-.contact > div {
-  position: relative;
-  left: 0;
-  flex: 1;
-  padding: 2% 5%;
-  text-align: center;
+.contact>div {
+  position       : relative;
+  left           : 0;
+  flex           : 1;
+  padding        : 2% 5%;
+  text-align     : center;
   justify-content: center;
 }
 
 .contact input,
 textarea {
-  padding-left: 5px;
+  padding-left    : 5px;
   background-color: #e3f6f5;
-  font: normal normal normal 15px/1.4em sans-serif;
-  border-width: 0 0 2px 0;
-  color: #18293d;
-  border-style: solid;
-  border-color: rgba(37, 60, 87, 1);
-  padding: 3px;
-  margin: 5%;
-  max-width: 80%;
-  flex: 1;
-  text-overflow: ellipsis;
-  resize: none;
+  font            : normal normal normal 15px/1.4em sans-serif;
+  border-width    : 0 0 2px 0;
+  color           : #18293d;
+  border-style    : solid;
+  border-color    : rgba(37, 60, 87, 1);
+  padding         : 3px;
+  margin          : 5%;
+  max-width       : 80%;
+  flex            : 1;
+  text-overflow   : ellipsis;
+  resize          : none;
 }
 
 textarea {
-  min-width: 80%;
+  min-width : 80%;
   min-height: 100px;
 }
 
 footer {
-  display: block;
+  display    : block;
   align-items: center;
-  text-align: center;
-  padding: 20px;
-  color: #18293d;
-  font: normal normal normal 18px/1.4em sans-serif;
+  text-align : center;
+  padding    : 20px;
+  color      : #18293d;
+  font       : normal normal normal 18px/1.4em sans-serif;
 }
 
 .font_1 {
-  color: #6decb9;
-  font: normal 42px "Roboto", sans-serif;
+  color         : #6decb9;
+  font          : normal 42px "Roboto", sans-serif;
   letter-spacing: 3px;
 }
 
 .font_2 {
-  color: #6decb9;
-  font: normal 24px "Roboto", sans-serif;
+  color         : #6decb9;
+  font          : normal 24px "Roboto", sans-serif;
   letter-spacing: 2px;
 }
 
 .font_3 {
-  color: #253c57;
-  font: normal 12px "Roboto", sans-serif;
+  color         : #253c57;
+  font          : normal 12px "Roboto", sans-serif;
   letter-spacing: 3px;
 }
 
 .btn-lire {
   border-radius: 2px;
 
-  font-size: 22px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  font-size       : 22px;
+  padding         : 10px;
+  justify-content : center;
+  align-items     : center;
+  cursor          : pointer;
   background-color: black;
-  color: #ffffff;
-  border: black;
+  color           : #ffffff;
+  border          : black;
 }
 
 .btn-lire:hover {
   text-decoration: none;
-  display: flex;
-  flex-flow: wrap;
-  font-size: 20px;
-  color: #68b0ab;
+  display        : flex;
+  flex-flow      : wrap;
+  font-size      : 20px;
+  color          : #68b0ab;
 }
+
 @media screen and (max-width: 600px) {
-  header {
-    width: 100vw;
+  /* header {
+    width  : 100vw;
     display: block;
   }
 
   .logo {
     text-justify: center;
-    padding: 10px 130px 10px 130px;
+    padding     : 10px 130px 10px 130px;
   }
 
   .navbar {
-    padding: 10px 160px 10px 160px;
+    padding     : 10px 160px 10px 160px;
     text-justify: center;
   }
 
   .navbar ul {
-    display: inline;
+    display   : inline;
     text-align: center;
+  } */
+
+
+  /* Accueil */
+  .accueil {
+    width        : 100%;
+    display      : flex;
+    flex-wrap    : nowrap;
+    align-items  : center;
+    align-content: center;
+    height       : 90vh;
+    background   : rgb(2, 0, 36);
+    background   : linear-gradient(90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(31, 207, 155, 0.9360119047619048) 0%,
+        rgba(147, 230, 240, 1) 33%,
+        rgba(231, 219, 229, 1) 100%);
   }
+
+  .accueil img {
+    height: 300px;
+  }
+
+  .div_accueil {
+    padding: 100px;
+    color  : #253c57;
+    flex   : 1;
+  }
+
+  .div_accueil h3 {
+    font: normal normal bold 30px/1.4em "Cinzel Decorative", cursive;
+  }
+
+  .div_accueil span {
+    font-size: 15px;
+  }
+
+  .font_1 {
+    color         : #6decb9;
+    font          : normal 30px "Roboto", sans-serif;
+    letter-spacing: 3px;
+  }
+
+  .font_2 {
+    color         : #6decb9;
+    font          : normal 10px "Roboto", sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .font_3 {
+    color         : #253c57;
+    font          : normal 12px "Roboto", sans-serif;
+    letter-spacing: 3px;
+  }
+
 }
