@@ -1,0 +1,143 @@
+        /* .datepicker,
+        .table-condensed {
+            width: 20%;
+        } */
+        /* current input value background color */
+
+
+        .datepicker-dropdown {
+            top: 0;
+            left: 0;
+            padding: 4px;
+            background-color: #354347;
+            border-radius: 10px;
+            /* text-align: center; */
+        }
+
+        .datepicker table tr td,
+        .datepicker table tr th {
+            text-align: center;
+            width: 35px;
+            height: 30px;
+            border-radius: 4px;
+            border: none;
+            color: #ffffff;
+        }
+
+        .datepicker table tr td.day:hover,
+        .datepicker table tr td.focused {
+            background:  #79d70f;
+            cursor: pointer;
+        }
+
+        .datepicker table tr td.old,
+        .datepicker table tr td.new {
+            color: #79d70f;
+        }
+
+       
+        .datepicker table tr td.today {
+            color: #000000;
+            background-color: #79d70f;
+            border-color:  #79d70f;
+        }
+
+        .datepicker table tr td.today:hover {
+            color: #ffffff;
+            background-color: #79d70f;
+            border-color: #79d70f;
+        }
+
+        .datepicker table tr td.active:active,
+        .datepicker table tr td.active.highlighted:active,
+        .datepicker table tr td.active.active,
+        .datepicker table tr td.active.highlighted.active,
+        .open>.dropdown-toggle.datepicker table tr td.active,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted {
+            color: #ffffff;
+            background-color: #419841;
+            border-color:  #79d70f;
+        }
+
+        .datepicker table tr td.active:active:hover,
+        .datepicker table tr td.active.highlighted:active:hover,
+        .datepicker table tr td.active.active:hover,
+        .datepicker table tr td.active.highlighted.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,
+        .datepicker table tr td.active:active:focus,
+        .datepicker table tr td.active.highlighted:active:focus,
+        .datepicker table tr td.active.active:focus,
+        .datepicker table tr td.active.highlighted.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,
+        .datepicker table tr td.active:active.focus,
+        .datepicker table tr td.active.highlighted:active.focus,
+        .datepicker table tr td.active.active.focus,
+        .datepicker table tr td.active.highlighted.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus {
+            color: #ffffff;
+            background-color: #79d70f;
+            /* border-color: #193c5a; */
+        }
+
+        .datepicker table tr td.active:active,
+        .datepicker table tr td.active.highlighted:active,
+        .datepicker table tr td.active.active,
+        .datepicker table tr td.active.highlighted.active,
+        .open>.dropdown-toggle.datepicker table tr td.active,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted {
+            color: #ffffff;
+            background-color: #79d70f;
+            border-color: #285e8e;
+        }
+
+        .datepicker table tr td.active:active:hover,
+        .datepicker table tr td.active.highlighted:active:hover,
+        .datepicker table tr td.active.active:hover,
+        .datepicker table tr td.active.highlighted.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active:hover,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:hover,
+        .datepicker table tr td.active:active:focus,
+        .datepicker table tr td.active.highlighted:active:focus,
+        .datepicker table tr td.active.active:focus,
+        .datepicker table tr td.active.highlighted.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active:focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted:focus,
+        .datepicker table tr td.active:active.focus,
+        .datepicker table tr td.active.highlighted:active.focus,
+        .datepicker table tr td.active.active.focus,
+        .datepicker table tr td.active.highlighted.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.focus,
+        .open>.dropdown-toggle.datepicker table tr td.active.highlighted.focus {
+            color: #ffffff;
+            background-color:  #79d70f;
+            border-color: #193c5a;
+        }
+
+        .datepicker .datepicker-switch {
+            width: 150px;
+        }
+
+        .datepicker .datepicker-switch:hover,
+        .datepicker .prev:hover,
+        .datepicker .next:hover,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        .datepicker tfoot tr th:hover {
+            background: #f4f4f4;
+        }
+
+        .btn {
+            background-color: #79d70f;
+            border: none;
+            border-radius: 0%;
+            text-justify: center;
+        }
+
+        .btn:hover {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+            background-color: #79d70f;
+            border: none;
+            border-radius: 0%;
+            text-justify: center;
+            justify-content: center;
+        }

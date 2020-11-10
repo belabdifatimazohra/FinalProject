@@ -1,33 +1,50 @@
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet" />
-</head>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link to awesome font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Import header footer and contact -->
+    <link href="../header.html" rel="import" />
+    <link href="../contact.html" rel="import" />
+    <link href="../footer.html" rel="import" />
+  </head>
 
-<body>
-    <div class="container">
+  <body>
+    <main>
+      <div class="container">
         <div class="content">
-            <div class="right">
-                <div class="title">LOGIN</div>
-                <input class="email" placeholder="Email" />
-                <input class="password" placeholder="Password" type="password" />
-                <div class="err"></div>
-                <div class="submit-btn">
-                    SUBMIT
-                </div>
-            </div>
-            <div class="left"></div>
+          <div class="right">
+            <div class="title">LOGIN</div>
+            <input class="email" placeholder="Email" />
+            <input class="password" placeholder="Password" type="password" />
+            <div class="err"></div>
+            <div class="submit-btn">SUBMIT</div>
+          </div>
+          <div class="left"></div>
         </div>
         <div class="loged-in">
-            Congratulations ! Your are loged in, and you just completed this
-            challenge !
+          Congratulations ! Your are loged in, and you just completed this
+          challenge !
         </div>
-    </div>
-    <script src="js/main.js"></script>
-</body>
-
+      </div>
+    </main>
+    <script src="../js/login.js"></script>
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/import.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
+  </body>
 </html>

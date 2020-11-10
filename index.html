@@ -17,12 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Import header footer and contact -->
     <link href="./header.html" rel="import" />
+    <link href="./contact.html" rel="import" />
+    <link href="./footer.html" rel="import" />
   </head>
 
   <body>
-    <!-- Semantic Tag Header -->
-
     <!-- Semantic Tag Main -->
     <main>
       <!--  Section Accueil -->
@@ -175,32 +176,11 @@
       <div id="contact"></div>
     </main>
 
-    <!-- Semantic Tag footer -->
-
-    <div id="footer"></div>
-
     <script src="js/main.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <!-- <script src="js/jquery-3.5.1.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script>
-      // $(function () {
-      //   $("#header").load("header.html");
-      //   $("#contact").load("contact.html");
-      //   $("#footer").load("footer.html");
-      // });
-      document.addEventListener("HTMLImportsLoaded", function () {
-        const extern = document.getElementsByTagName("link")[4].import;
-        console.log(extern);
-        const main = document
-          .getElementsByName("main")[0]
-          .insertAdjacentElement(
-            "beforebegin",
-            extern.getElementsByTagName("main")
-          );
-      });
-    </script>
+    <script src="js/import.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
   </body>
 </html>
