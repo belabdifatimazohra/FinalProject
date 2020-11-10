@@ -5,12 +5,12 @@ document.addEventListener("HTMLImportsLoaded", () => {
   const externContact = document.getElementsByTagName("link")[5].import;
   const externFooter = document.getElementsByTagName("link")[6].import;
 
-  const mainHeader = document
-    .getElementsByTagName("main")[0]
-    .insertAdjacentElement(
-      "beforebegin",
-      externHeader.getElementsByTagName("header")[0]
-    );
+  // const mainHeader = document
+  //   .getElementsByTagName("main")[0]
+  //   .insertAdjacentElement(
+  //     "beforebegin",
+  //     externHeader.getElementsByTagName("header")[0]
+  //   );
 
   const mainContact = document
     .getElementsByTagName("main")[0]

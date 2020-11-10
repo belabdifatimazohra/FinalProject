@@ -1,9 +1,7 @@
-
 body {
-  margin          : 0;
-  padding         : 0;
+  margin: 0;
+  padding: 0;
   background-color: rgba(255, 255, 255);
-  ;
 }
 
 /* 
@@ -90,115 +88,112 @@ main {
 
 /* change the color of active or hovered links */
 .navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-item:hover .nav-link {
+.navbar-nav .nav-item:hover .nav-link,
+.nav-item .dropdown.active {
   color: #79d70f;
 }
 
 /* Log in menu item style */
 .container {
-  width           : 100%;
-  height          : 100vh;
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f0f3f7;
 }
 
 .content {
-  width           : 60%;
-  height          : 70%;
-  display         : flex;
+  width: 60%;
+  height: 70%;
+  display: flex;
   background-color: white;
-  border-radius   : 2px;
-  box-shadow      : -2px 0px 33px 4px rgba(117, 117, 117, 1);
-  transition      : 0.4s;
+  border-radius: 2px;
+  box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
+  transition: 0.4s;
 }
 
 .right {
-  height         : 100%;
-  flex           : 1;
-  display        : flex;
+  height: 100%;
+  flex: 1;
+  display: flex;
   justify-content: center;
-  align-items    : center;
-  flex-direction : column;
+  align-items: center;
+  flex-direction: column;
 }
 
 .left {
-  height             : 100%;
-  flex               : 1;
-  display            : flex;
-  justify-content    : center;
-  align-items        : center;
-  background-image   : url("../res/img_login.jpeg");
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../res/img_login.jpeg");
   background-position: center;
-  background-size    : contain;
+  background-size: contain;
 }
 
 .info-contact input {
-  width      : 80%;
+  width: 80%;
   font-family: inherit;
-  height     : 50px;
-  margin     : 20px 0px;
-  font-size  : 16px;
+  height: 50px;
+  margin: 20px 0px;
+  font-size: 16px;
 }
 
 .title {
   font-size: 30px;
-  margin   : 20px 0px;
+  margin: 20px 0px;
 }
 
 .submit-btn {
   background-color: #79d70f;
-  border-radius   : 2px;
-  color           : white;
-  font-size       : 20px;
-  height          : 50px;
-  width           : 60%;
-  margin          : 30px 0px;
-  display         : flex;
-  justify-content : center;
-  align-items     : center;
-  cursor          : pointer;
+  border-radius: 2px;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  width: 60%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .err {
-  font-size  : 12px;
-  color      : red;
+  font-size: 12px;
+  color: red;
   font-weight: 900;
 }
 
 .loged-in {
-  width           : 60%;
-  height          : 70%;
-  display         : none;
+  width: 60%;
+  height: 70%;
+  display: none;
   background-color: white;
-  justify-content : center;
-  text-align      : center;
-  align-items     : center;
-  border-radius   : 2px;
-  box-shadow      : -2px 0px 33px 4px rgba(117, 117, 117, 1);
-  font-size       : 35px;
-  transition      : 0.4s;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
+  font-size: 35px;
+  transition: 0.4s;
 }
 
 .accueil {
   background-color: #000000;
-  height          : 100vh;
+  height: 100vh;
 }
 
 .div_accueil {
-
-  width  : 50%;
+  width: 50%;
   padding: 170px 50px;
-  color  : #eeeeee;
-  font-family: 'Fredericka the Great',
-    cursive;
-
+  color: #eeeeee;
+  font-family: "Fredericka the Great", cursive;
 }
 
 .div_accueil h3 {
-  font: normal normal bold 50px/1.4em 'Fredericka the Great',
-    cursive;
+  font: normal normal bold 50px/1.4em "Fredericka the Great", cursive;
 }
 
 .div_accueil span {
@@ -206,14 +201,14 @@ main {
 }
 
 .social i.fa {
-  color           : #79d70f;
-  width           : 30px;
-  height          : 30px;
-  border-radius   : 60%;
-  text-align      : center;
-  line-height     : 20px;
-  vertical-align  : middle;
-  padding         : 4px;
+  color: #79d70f;
+  width: 30px;
+  height: 30px;
+  border-radius: 60%;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 4px;
   background-color: #000;
 }
 
@@ -221,16 +216,16 @@ main {
   background: url("../res/Accueil/bg1.jpg") no-repeat center center;
   transition: background 3s;
   max-height: 80vh;
-  max-width : 100%;
+  max-width: 100%;
 }
 
 /* Rencontre moi */
 .container_2 {
   /* display            : block; */
-  width              : 100%;
-  height             : 100vh;
+  width: 100%;
+  height: 100vh;
   /* background-color: orange; */
-  padding            : 1%;
+  padding: 1%;
 }
 
 /* .box-1 {
@@ -249,73 +244,72 @@ main {
 } */
 
 .box-3 {
-  display                  : block;
-  align-items              : center;
-  justify-content          : center;
-  margin-top               : 40px;
-  padding                  : 40px;
-  width                    : 99%;
-  background               : url("../res/bg/bg_Apropos.jpeg") no-repeat center center;
-  background-size          : cover;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 40px;
+  width: 99%;
+  background: url("../res/bg/bg_Apropos.jpeg") no-repeat center center;
+  background-size: cover;
   /* position              : absolute; */
   /* background-color      : #222831; */
-  text-align               : center;
-  max-height               : fit-content;
+  text-align: center;
+  max-height: fit-content;
   /* border-radius         : 0 150px; */
-
 }
 
 /* FitZone */
 .container_3 {
-  margin             : 10% 0;
-  width              : 100%;
-  min-height         : 650px;
-  height             : fit-content;
-  display            : block;
-  font-family        : "Roboto", sans-serif;
+  margin: 10% 0;
+  width: 100%;
+  min-height: 650px;
+  height: fit-content;
+  display: block;
+  font-family: "Roboto", sans-serif;
   /* background-color: yellow; */
 }
 
 .box-4 {
-  position         : relative;
-  display          : block;
-  background-image : url(../res/FitZone/FitZone.jpeg);
+  position: relative;
+  display: block;
+  background-image: url(../res/FitZone/FitZone.jpeg);
   background-repeat: no-repeat;
-  background-size  : contain;
-  height           : 400px;
-  width            : 50%;
-  left             : 50%;
+  background-size: contain;
+  height: 400px;
+  width: 50%;
+  left: 50%;
 }
 
 .box-5 {
-  padding         : 40px;
-  width           : 40%;
-  position        : absolute;
+  padding: 40px;
+  width: 40%;
+  position: absolute;
   background-color: #6decb9;
-  text-align      : center;
-  left            : 20%;
-  margin          : -10% 0;
+  text-align: center;
+  left: 20%;
+  margin: -10% 0;
 }
 
 /* Plans et Prix */
 
 .container_4 {
-  margin          : 0;
-  width           : 100%;
+  margin: 0;
+  width: 100%;
   background-color: #f4f4f4;
-  display         : flex;
-  flex-direction  : row;
-  justify-content : center;
-  flex-wrap       : wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .fit-zone {
-  display        : flex;
-  flex-direction : column;
-  flex-wrap      : wrap;
-  text-align     : center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  padding        : 30px;
+  padding: 30px;
 }
 
 .fit-zone div:first-child {
@@ -332,7 +326,7 @@ main {
 
 .fit-zone img {
   border-bottom: solid 5px #6decb9;
-  object-fit   : contain;
+  object-fit: contain;
 }
 
 /* .fit-zone > div {
@@ -342,131 +336,129 @@ main {
 /* reserve page */
 .section-reserve {
   text-align: center;
-  font      : normal normal normal 18px/1.8em sans-serif;
-  color     : #253c57;
+  font: normal normal normal 18px/1.8em sans-serif;
+  color: #253c57;
 }
 
 .reserve {
-  margin-top      : 60px;
+  margin-top: 60px;
   background-color: #f5f5f5;
-  text-align      : center;
-  padding         : 30px;
-  height          : auto;
+  text-align: center;
+  padding: 30px;
+  height: auto;
 }
 
-.reserve>h1 {
+.reserve > h1 {
   font: normal normal normal 75px/1.4em sans-serif;
 }
 
 .offres {
-  display              : grid;
+  display: grid;
   grid-template-columns: 30% 30% 30%;
-  justify-content      : center;
-  height               : auto;
-  gap                  : 20px;
+  justify-content: center;
+  height: auto;
+  gap: 20px;
 }
 
-.offres>div {
-  display         : block;
-  position        : relative;
+.offres > div {
+  display: block;
+  position: relative;
   background-color: #f5f5f5;
-  padding         : 5%;
+  padding: 5%;
 }
 
-.offres>div>span {
-  font : normal normal normal 26px/1.4em sans-serif;
+.offres > div > span {
+  font: normal normal normal 26px/1.4em sans-serif;
   color: #253c57;
 }
 
 /* contact */
 .contact {
-  margin          : 50px 0;
-  display         : flex;
-  justify-content : center;
-  text-align      : center;
-  align-items     : center;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   background-color: #6decb9;
 }
 
-.contact>div {
-  position       : relative;
-  left           : 0;
-  flex           : 1;
-  padding        : 2% 5%;
-  text-align     : center;
+.contact > div {
+  position: relative;
+  left: 0;
+  flex: 1;
+  padding: 2% 5%;
+  text-align: center;
   justify-content: center;
 }
 
 .contact input,
 textarea {
-  padding-left    : 5px;
+  padding-left: 5px;
   background-color: #e3f6f5;
-  font            : normal normal normal 15px/1.4em sans-serif;
-  border-width    : 0 0 2px 0;
-  color           : #18293d;
-  border-style    : solid;
-  border-color    : rgba(37, 60, 87, 1);
-  padding         : 3px;
-  margin          : 5%;
-  max-width       : 80%;
-  flex            : 1;
-  text-overflow   : ellipsis;
-  resize          : none;
+  font: normal normal normal 15px/1.4em sans-serif;
+  border-width: 0 0 2px 0;
+  color: #18293d;
+  border-style: solid;
+  border-color: rgba(37, 60, 87, 1);
+  padding: 3px;
+  margin: 5%;
+  max-width: 80%;
+  flex: 1;
+  text-overflow: ellipsis;
+  resize: none;
 }
 
 textarea {
-  min-width : 80%;
+  min-width: 80%;
   min-height: 100px;
 }
 
 footer {
-  display    : block;
+  display: block;
   align-items: center;
-  text-align : center;
-  padding    : 20px;
-  color      : #18293d;
-  font       : normal normal normal 18px/1.4em sans-serif;
+  text-align: center;
+  padding: 20px;
+  color: #18293d;
+  font: normal normal normal 18px/1.4em sans-serif;
 }
 
 .font_1 {
   color: #79d70f;
-  font : normal 42px 'Fredericka the Great',
-    cursive;
+  font: normal 42px "Fredericka the Great", cursive;
   letter-spacing: 3px;
 }
 
 .font_2 {
   color: #79d70f;
-  font : normal 20px 'Fredericka the Great',
-    cursive;
+  font: normal 20px "Fredericka the Great", cursive;
   letter-spacing: 2px;
 }
 
 .font_3 {
-  color         : #253c57;
-  font          : normal 12px "Roboto", sans-serif;
+  color: #253c57;
+  font: normal 12px "Roboto", sans-serif;
   letter-spacing: 3px;
 }
 
 .btn-lire {
   border-radius: 2px;
 
-  font-size       : 22px;
-  padding         : 10px;
-  justify-content : center;
-  align-items     : center;
-  cursor          : pointer;
+  font-size: 22px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   background-color: black;
-  color           : #ffffff;
-  border          : black;
+  color: #ffffff;
+  border: black;
 }
 
 .btn-lire:hover {
   text-decoration: none;
-  display        : flex;
-  flex-flow      : wrap;
-  font-size      : 20px;
-  color          : #68b0ab;
+  display: flex;
+  flex-flow: wrap;
+  font-size: 20px;
+  color: #68b0ab;
 }
 
 @media screen and (max-width: 600px) {
@@ -492,18 +484,20 @@ footer {
 
   /* Accueil */
   .accueil {
-    width        : 100%;
-    display      : flex;
-    flex-wrap    : nowrap;
-    align-items  : center;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     align-content: center;
-    height       : 90vh;
-    background   : rgb(2, 0, 36);
-    background   : linear-gradient(90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(31, 207, 155, 0.9360119047619048) 0%,
-        rgba(147, 230, 240, 1) 33%,
-        rgba(231, 219, 229, 1) 100%);
+    height: 90vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(31, 207, 155, 0.9360119047619048) 0%,
+      rgba(147, 230, 240, 1) 33%,
+      rgba(231, 219, 229, 1) 100%
+    );
   }
 
   .accueil img {
@@ -512,8 +506,8 @@ footer {
 
   .div_accueil {
     padding: 100px;
-    color  : #253c57;
-    flex   : 1;
+    color: #253c57;
+    flex: 1;
   }
 
   .div_accueil h3 {
@@ -525,20 +519,20 @@ footer {
   }
 
   .font_1 {
-    color         : #79d70f;
-    font          : normal 30px "Roboto", sans-serif;
+    color: #79d70f;
+    font: normal 30px "Roboto", sans-serif;
     letter-spacing: 3px;
   }
 
   .font_2 {
-    color         : #79d70f;
-    font          : normal 10px "Roboto", sans-serif;
+    color: #79d70f;
+    font: normal 10px "Roboto", sans-serif;
     letter-spacing: 2px;
   }
 
   .font_3 {
-    color         : #253c57;
-    font          : normal 12px "Roboto", sans-serif;
+    color: #253c57;
+    font: normal 12px "Roboto", sans-serif;
     letter-spacing: 3px;
   }
 }
