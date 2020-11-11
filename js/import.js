@@ -1,9 +1,9 @@
 // used to import header, contact and footer
 
 document.addEventListener("HTMLImportsLoaded", () => {
-  const externHeader = document.getElementsByTagName("link")[4].import;
-  const externContact = document.getElementsByTagName("link")[5].import;
-  const externFooter = document.getElementsByTagName("link")[6].import;
+  // const externHeader = document.getElementsByTagName("link")[4].import;
+  const externContact = document.getElementsByTagName("link")[4].import;
+  const externFooter = document.getElementsByTagName("link")[5].import;
 
   // const mainHeader = document
   //   .getElementsByTagName("main")[0]
