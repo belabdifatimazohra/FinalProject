@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 /* 
@@ -223,9 +226,8 @@ main {
 .container_2 {
   /* display            : block; */
   width: 100%;
-  height: fit-content;
+  margin: 40px 0;
   /* background-color: orange; */
-  padding: 1%;
 }
 
 /* .box-1 {
@@ -244,15 +246,26 @@ main {
 } */
 
 .box-3 {
-  display: block;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  padding: 40px;
-  width: 99%;
+  align-items: center;
+}
+
+.box-3 img {
+  object-fit: cover;
+  object-position: 0;
+  height: 400px;
+}
+
+.rencontre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
   background: url("../res/bg/bg_Apropos.jpeg") no-repeat center center;
   background-size: cover;
-  text-align: center;
-  max-height: fit-content;
 }
 
 /* FitZone */
