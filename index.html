@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Fit Zone</title>
-    <!-- CSS File -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Fonts -->
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Link to awesome font -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <!-- Import footer and contact -->
-    <link href="./contact.html" rel="import" />
-    <link href="./footer.html" rel="import" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Fit Zone</title>
+  <!-- CSS File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- Fonts -->
 
-  <body>
-    <!-- Semantic Tag Header -->
-    <header>
-      <nav
-        class="navbar fixed-top navbar-expand-lg navbar-dark static-top"
-        style="background-color: black"
-      >
-        <a class="navbar-brand" href="#">
-          <img src="../res/logo_FZ.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Accueil <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rencontre">Rencontre moi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#fitzone">FitZone</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+  <!-- Link to awesome font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Import footer and contact -->
+  <link href="./contact.html" rel="import" />
+  <link href="./footer.html" rel="import" />
+
+  <!-- Service , calcul -->
+  <!-- Icons font CSS-->
+  <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+  <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <!-- Font special for pages-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS-->
+  <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+  <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+  <!-- Main CSS-->
+  <link href="css/calcul.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+  <!-- Semantic Tag Header -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark static-top" style="background-color: black">
+      <a class="navbar-brand" href="#">
+        <img src="../res/logo_FZ.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rencontre">Rencontre moi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fitzone">FitZone</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -75,135 +74,127 @@
                 <a class="dropdown-item" href="shop.html">Shop</a>
               </div>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i
-                  class="fa fa-user-circle"
-                  style="font-size: 24px; color: #79d70f"
-                ></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Semantic Tag Main -->
-    <main>
-      <!--  Section Accueil -->
-      <section id="accueil">
-        <div class="accueil" id="animated-bg">
-          <div class="div_accueil">
-            <h3>Fatima Zohra</h3>
-            <p>
-              <span>Découvrez votre pouvoir grâce au coaching en ligne </span>
-            </p>
-            <div class="social">
-              <a
-                href="https://www.facebook.com/fatimazohra.belabdi/"
-                target="_blank"
-              >
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/floura_bel/" target="_blank"
-                ><i class="fa fa-instagram"></i
-              ></a>
-              <a href="https://twitter.com/BelabdiFatima" target="_blank">
-                <i class="fa fa-twitter"></i
-              ></a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-user-circle" style="font-size: 24px; color: #79d70f"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Semantic Tag Main -->
+  <main>
+    <!--  Section Accueil -->
+    <section id="accueil">
+      <div class="accueil" id="animated-bg">
+        <div class="div_accueil">
+          <h3>Fatima Zohra</h3>
+          <p>
+            <span>Découvrez votre pouvoir grâce au coaching en ligne </span>
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/fatimazohra.belabdi/" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/floura_bel/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/BelabdiFatima" target="_blank">
+              <i class="fa fa-twitter"></i></a>
           </div>
-          <!-- style="flex:2; text-align:end" -->
-          <!-- <div id="animated-bg" style="flex:2; text-align:end">
+        </div>
+        <!-- style="flex:2; text-align:end" -->
+        <!-- <div id="animated-bg" style="flex:2; text-align:end">
             <img src="res/img_accueil-2.png">
                 </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Section Rencontre moi -->
-      <section id="rencontre">
-        <div class="container_2">
-          <div class="box-3">
-            <div background-color: chartreuse">
-              <img src="./res/bg/bg_1.jpeg" />
+    <!-- Section Rencontre moi -->
+    <section id="rencontre">
+      <div class="container_2">
+        <div class="box-3">
+          <div background-color: chartreuse">
+            <img src="./res/bg/bg_1.jpeg" />
+          </div>
+          <div class="rencontre">
+            <div>
+              <h2 class="font_1">
+                <span>Fatima Zohra</span>
+              </h2>
+              <p class="font_2">Coach sportif certifiée</p>
             </div>
-            <div class="rencontre">
-              <div>
-                <h2 class="font_1">
-                  <span>Fatima Zohra</span>
-                </h2>
-                <p class="font_2">Coach sportif certifiée</p>
-              </div>
-              <div>
-                <p
-                  class="font_2"
-                  style="
+            <div>
+              <p class="font_2" style="
                     font-size: 16px;
                     color: #ffffff;
                     font-family: sans-serif;
-                  "
-                >
-                  Depuis mon enfance je voulais comprendre comment mon corps,
-                  mon métabolisme fonctionnent et comment je peux améliorer non
-                  seulement ma santé physique, mais aussi ma santé mentale.
-                  comme beaucoup d'autres femmes que je coach maintenant. J'ai
-                  pu améliorer considérablement ma composition corporelle en
-                  appliquant ce que j'ai appris. Une fois que j'ai compris
-                  l'impact des habitudes nutritionnelles sur ma santé globale,
-                  ma composition corporelle et mon niveau d'énergie, j'ai décidé
-                  de compléter la qualification sur la nutrition afin d'élargir
-                  mes compétences sur le bien être
-                </p>
-                <!-- En savoir plus sur fatima zohra  -->
-                <a class="btn-lire" style="border-color    : #fff;
+                  ">
+                Depuis mon enfance je voulais comprendre comment mon corps,
+                mon métabolisme fonctionnent et comment je peux améliorer non
+                seulement ma santé physique, mais aussi ma santé mentale.
+                comme beaucoup d'autres femmes que je coach maintenant. J'ai
+                pu améliorer considérablement ma composition corporelle en
+                appliquant ce que j'ai appris. Une fois que j'ai compris
+                l'impact des habitudes nutritionnelles sur ma santé globale,
+                ma composition corporelle et mon niveau d'énergie, j'ai décidé
+                de compléter la qualification sur la nutrition afin d'élargir
+                mes compétences sur le bien être
+              </p>
+              <!-- En savoir plus sur fatima zohra  -->
+              <div style="margin-top: 20px;"></div>
+              <a class="btn-lire" style="border-color    : #fff;
        color           : black;
        background-color: #79d70f;
        border          : solid 1px;">
-                        Lire la suite
+                Lire la suite
 
-                    </a>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
+    </section>
 
-      <!-- Section FitZone -->
-      <section id="fitzone">
-        <div class="container_3">
-          <div class="box-4"></div>
-          <div class="box-5">
-            <h2 class="font_1" style="color: black">
-              <span> Fit Zone </span>
-            </h2>
-            <p class="font_2" style="color: black">Votre santé Votre choix</p>
-            <p>
-              Nous vous aidons à adopter une routine de remise en forme durable
-              qu'ils aiment. Nous aidons les gens à retrouver confiance en eux,
-              à surmonter les blessures et à éliminer les insécurités en étant
-              motivés à s'entraîner dur et à manger des aliments sains et
-              nutritifs.
-              <br />Nous savons que lorsque vous vous sentez fort physiquement,
-              vous développez une force mentale qui se prolonge dans le reste de
-              votre vie. <br />Laissez-nous vous aider à atteindre cet objectif.
-            </p>
-            <!-- En savoir plus sur fit zone -->
+    <!-- Section FitZone -->
+    <section id="fitzone">
+      <div class="container_3">
+
+        <div class="box-5">
+          <h2 class="font_1" style="color: black">
+            <span> Fit Zone </span>
+          </h2>
+          <p class="font_2" style="color: black">Votre santé Votre choix</p>
+          <p>
+            Nous vous aidons à adopter une routine de remise en forme durable
+            qu'ils aiment. Nous aidons les gens à retrouver confiance en eux,
+            à surmonter les blessures et à éliminer les insécurités en étant
+            motivés à s'entraîner dur et à manger des aliments sains et
+            nutritifs.
+            <br />Nous savons que lorsque vous vous sentez fort physiquement,
+            vous développez une force mentale qui se prolonge dans le reste de
+            votre vie. <br />Laissez-nous vous aider à atteindre cet objectif.
+          </p>
+          <!-- En savoir plus sur fit zone -->
+          <div style="margin-top: 20px;">
             <a class="btn-lire" href=""> Lire la suite </a>
           </div>
         </div>
-      </section>
+        <div class="box-4"></div>
+      </div>
+    </section>
 
-      <!-- Plans et prix -->
-      <section id="plans">
-        <div class="container_4">
-          <!--  personnel avec Fatima Zohra -->
-          <div class="fit-zone">
+    <!-- Plans et prix -->
+    <section id="plans">
+      <!-- <div class="container_4"> -->
+      <!--  personnel avec Fatima Zohra -->
+      <!-- <div class="fit-zone">
             <div>
               <img
                 src="res/FitZone/personal-trainer.jpg"
@@ -217,10 +208,10 @@
             <div>
               <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
             </div>
-          </div>
+          </div> -->
 
-          <!-- Fit Zone  programme -->
-          <div class="fit-zone">
+      <!-- Fit Zone  programme -->
+      <!-- <div class="fit-zone">
             <div>
               <img
                 src="res/FitZone/Fit-programme.jpg"
@@ -234,11 +225,11 @@
             <div>
               <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
             </div>
-          </div>
+          </div> -->
 
-          <!-- Fit Zone  club -->
+      <!-- Fit Zone  club -->
 
-          <div class="fit-zone">
+      <!-- <div class="fit-zone">
             <div>
               <img src="res/FitZone/Fit-club.jpg" alt="fit zone club" />
             </div>
@@ -249,16 +240,127 @@
             <div>
               <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
             </div>
+          </div> -->
+      <!-- </div> -->
+
+      <div class="calcul">
+        <div class="page-wrapper  p-t-45 p-b-50">
+          <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+              <div class="card-heading">
+                <h2 class="title">Taux métabolique basal (BMR)</h2>
+              </div>
+              <div class="card-body">
+                <form method="POST">
+                  <div class="form-row m-b-55">
+                    <div class="name">Nom</div>
+                    <div class="value">
+                      <div class="row " style="display: flex; ">
+                        <div class="col-2" style="margin-right: 15vw; ">
+                          <div class="input-group-desc">
+                            <input class="input--style-5" type="text" name="first_name" style="width: 20vw; ">
+                            <label class="label--desc">Prénom</label>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="input-group-desc">
+                            <input class="input--style-5" type="text" name="last_name" style="width: 20vw; ">
+                            <label class="label--desc"> NOM </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Poids et Longueur -->
+                  <div class="form-row m-b-55">
+                    <div class="name">Poids et Longueur</div>
+                    <div class="value">
+                      <div class="row " style="display: flex; ">
+                        <div class="col-2" style="margin-right: 15vw; ">
+                          <div class="input-group-desc">
+                            <input class="input--style-5" type="text" name="Poids" style="width: 20vw; ">
+                            <label class="label--desc">Poids</label>
+                          </div>
+                        </div>
+                        <div class="col-2">
+                          <div class="input-group-desc">
+                            <input class="input--style-5" type="text" name="Longueur" style="width: 20vw; ">
+                            <label class="label--desc"> Longueur </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="name">Age</div>
+                    <div class="value">
+                      <div class="input-group">
+                        <input class="input--style-5" type="text" name="age">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="name">Services</div>
+                    <div class="value">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search">
+                          <select name="subject">
+                            <option disabled="disabled" selected="selected">Choisissez le service</option>
+                            <option>One-on-one coaching</option>
+                            <option>ENTRAÎNEMENT PERSONNEL À DISTANCE</option>
+                            <option>RÉCUPÉRATION & RESTAURATION</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row p-t-20">
+                    <label class="label label--block">Etes-vous déjà client?</label>
+                    <div class="p-t-15">
+                      <label class="radio-container m-r-55">Oui
+                        <input type="radio" checked="checked" name="exist">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio-container">Non
+                        <input type="radio" name="exist">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button class="btn btn--radius-2 btn--green" type="submit">Valider</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <script src="js/main.js"></script>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/import.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
+
+      </div>
+
+
+
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/import.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
+
+  <!-- service, calcul JS-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- Vendor JS-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <script src="vendor/datepicker/moment.min.js"></script>
+  <script src="vendor/datepicker/daterangepicker.js"></script>
+
+  <!-- Main JS-->
+  <script src="js/calcul.js<script>
+  
   </body>
 </html>

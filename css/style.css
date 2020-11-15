@@ -270,33 +270,32 @@ main {
 
 /* FitZone */
 .container_3 {
-  margin: 10% 0;
   width: 100%;
   min-height: 650px;
   height: fit-content;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
 }
 
 .box-4 {
-  position: relative;
-  display: block;
-  background-image: url(../res/FitZone/FitZone.jpeg);
+  background-image: url(../res/FitZone/fitZone2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 400px;
-  width: 50%;
-  left: 50%;
+  flex: 0.75;
+
+  
 }
 
 .box-5 {
   padding: 40px;
-  width: 40%;
-  position: absolute;
-  background-color: #6decb9;
+  background-color: #82c91e;
   text-align: center;
-  left: 20%;
-  margin: -10% 0;
+  flex: 1.25;
+  margin-left: 7%;
+ 
 }
 
 /* Plans et Prix */
@@ -450,7 +449,7 @@ footer {
 
 .btn-lire {
   border-radius: 2px;
-
+margin-top: 20px;
   font-size: 22px;
   padding: 10px;
   justify-content: center;
