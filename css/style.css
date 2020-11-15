@@ -285,17 +285,14 @@ main {
   background-size: contain;
   height: 400px;
   flex: 0.75;
-
-  
 }
 
 .box-5 {
   padding: 40px;
-  background-color: #82c91e;
+  background-color: #57b846;
   text-align: center;
   flex: 1.25;
   margin-left: 7%;
- 
 }
 
 /* Plans et Prix */
@@ -332,7 +329,7 @@ main {
 }
 
 .fit-zone img {
-  border-bottom: solid 5px #6decb9;
+  border-bottom: solid 5px #79d70f;
   object-fit: contain;
 }
 
@@ -386,7 +383,7 @@ main {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: #6decb9;
+  background-color: #57b846;
 }
 
 .contact > div {
@@ -449,7 +446,7 @@ footer {
 
 .btn-lire {
   border-radius: 2px;
-margin-top: 20px;
+  margin-top: 20px;
   font-size: 22px;
   padding: 10px;
   justify-content: center;

@@ -74,13 +74,18 @@
                 <a class="dropdown-item" href="shop.html">Shop</a>
               </div>
             </li> -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
-          </li>
+          </li> -->
 
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-shopping-cart" style="font-size: 26px; color: #79d70f"></i></a>
+          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="fa fa-user-circle" style="font-size: 24px; color: #79d70f"></i></a>
@@ -170,8 +175,8 @@
           <h2 class="font_1" style="color: black">
             <span> Fit Zone </span>
           </h2>
-          <p class="font_2" style="color: black">Votre santé Votre choix</p>
-          <p>
+          <p class="font_2" style="color: black ;font-size: 16px;">Votre santé Votre choix</p>
+          <p class="font_2" style=" color: black ;font-size: 16px;font-family: sans-serif;">
             Nous vous aidons à adopter une routine de remise en forme durable
             qu'ils aiment. Nous aidons les gens à retrouver confiance en eux,
             à surmonter les blessures et à éliminer les insécurités en étant
@@ -190,65 +195,14 @@
       </div>
     </section>
 
-    <!-- Plans et prix -->
-    <section id="plans">
-      <!-- <div class="container_4"> -->
-      <!--  personnel avec Fatima Zohra -->
-      <!-- <div class="fit-zone">
-            <div>
-              <img
-                src="res/FitZone/personal-trainer.jpg"
-                alt="personal-teraner"
-              />
-            </div>
-            <div class="font_3">
-              <h4>Entraineur Personnel</h4>
-              <h6>Spécifique</h6>
-            </div>
-            <div>
-              <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
-            </div>
-          </div> -->
-
-      <!-- Fit Zone  programme -->
-      <!-- <div class="fit-zone">
-            <div>
-              <img
-                src="res/FitZone/Fit-programme.jpg"
-                alt="personal-terainer"
-              />
-            </div>
-            <div class="font_3">
-              <h4>Programme Fit Zone</h4>
-              <h6>Par catégorie</h6>
-            </div>
-            <div>
-              <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
-            </div>
-          </div> -->
-
-      <!-- Fit Zone  club -->
-
-      <!-- <div class="fit-zone">
-            <div>
-              <img src="res/FitZone/Fit-club.jpg" alt="fit zone club" />
-            </div>
-            <div class="font_3">
-              <h4>Fit Zone club</h4>
-              <h6>Rejoinez Nous</h6>
-            </div>
-            <div>
-              <a class="btn-lire" href="./pages/reservation.html"> Reserver </a>
-            </div>
-          </div> -->
-      <!-- </div> -->
+   
 
       <div class="calcul">
         <div class="page-wrapper  p-t-45 p-b-50">
           <div class="wrapper wrapper--w790">
             <div class="card card-5">
               <div class="card-heading">
-                <h2 class="title">Taux métabolique basal (BMR)</h2>
+                <h2 class="title">Calculez votre Indice de Masse Corporelle (IMC)</h2>
               </div>
               <div class="card-body">
                 <form method="POST">
@@ -258,13 +212,13 @@
                       <div class="row " style="display: flex; ">
                         <div class="col-2" style="margin-right: 15vw; ">
                           <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="first_name" style="width: 20vw; ">
+                            <input class="input--style-5" type="text" name="first_name" style="width: 18vw; ">
                             <label class="label--desc">Prénom</label>
                           </div>
                         </div>
                         <div class="col-2">
                           <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="last_name" style="width: 20vw; ">
+                            <input class="input--style-5" type="text" name="last_name" style="width: 18vw; ">
                             <label class="label--desc"> NOM </label>
                           </div>
                         </div>
@@ -278,28 +232,28 @@
                       <div class="row " style="display: flex; ">
                         <div class="col-2" style="margin-right: 15vw; ">
                           <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="Poids" style="width: 20vw; ">
-                            <label class="label--desc">Poids</label>
+                            <input class="input--style-5" type="text" name="Poids" style="width: 18vw; ">
+                            <label class="label--desc">Poids(kg)</label>
                           </div>
                         </div>
                         <div class="col-2">
                           <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="Longueur" style="width: 20vw; ">
-                            <label class="label--desc"> Longueur </label>
+                            <input class="input--style-5" type="text" name="Longueur" style="width: 18vw; ">
+                            <label class="label--desc"> Longueur(cm) </label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-row">
+                  <!-- <div class="form-row">
                     <div class="name">Age</div>
                     <div class="value">
                       <div class="input-group">
                         <input class="input--style-5" type="text" name="age">
                       </div>
                     </div>
-                  </div>
-                  <div class="form-row">
+                  </div> -->
+                  <!-- <div class="form-row">
                     <div class="name">Services</div>
                     <div class="value">
                       <div class="input-group">
@@ -313,10 +267,9 @@
                           <div class="select-dropdown"></div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                  </div> -->
                   <div class="form-row p-t-20">
-                    <label class="label label--block">Etes-vous déjà client?</label>
+                    <label class="label label--block">Etes-vous déjà membre?</label>
                     <div class="p-t-15">
                       <label class="radio-container m-r-55">Oui
                         <input type="radio" checked="checked" name="exist">
@@ -329,19 +282,27 @@
                     </div>
                   </div>
                   <div>
-                    <button class="btn btn--radius-2 btn--green" type="submit">Valider</button>
+                    <button class="btn btn--radius-2 btn--green" type="submit">Calculez</button>
+                  </div>
+                  <!-- Résultat -->
+                  <div class="resultat">
+                    <label class="label label--block">Votre Indice de Masse Corporelle (IMC) est : <span id="imc"></span></label>
+                    <label class="label label--block">Avis de notre expert: Votre corpulence est <span id="etatImc"></span></label>
+                    <label class="label label--block">Votre poids est <span id="rapportPoids"></span> 
+                    compte tenu de votre taille.</label>
+                    <label class="label label--block">Une alimentation équilibrée, sans excès de
+                    matières grasses, et une activité physique régulière comme la marche, la natation ou le vélo vous
+                    aideront à maintenir votre poids idéal.</label>
+                  </div>
+                  <div>
+                    <button class="btn btn--radius-2 btn--green" type="submit">découvrez nos services</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
-
-
-      </div>
-
-
-
+     </div>
     </section>
   </main>
 
