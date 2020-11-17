@@ -1,23 +1,30 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
-    <!-- CSS File -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="utf-8" />
+    <title>Shop</title>
+
     <!-- Link to awesome font -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- DatePicker -->
+
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css" />
+
+    <!-- bootstrap CSS File -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+
     <!-- Import header footer and contact -->
-    <link href="../contact.html" rel="import" />
-    <link href="../footer.html" rel="import" />
+    <!-- <link href="../contact.html" rel="import" />
+    <link href="../footer.html" rel="import" /> -->
   </head>
 
   <body>
@@ -30,7 +37,6 @@
         <a class="navbar-brand" href="../index.html">
           <img src="../res/logo_FZ.png" alt="logo" />
         </a>
-        <!-- Responsive Menu -->
         <button
           class="navbar-toggler"
           type="button"
@@ -44,7 +50,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="../index.html"
                 >Accueil <span class="sr-only">(current)</span></a
               >
@@ -55,11 +61,12 @@
             <li class="nav-item">
               <a class="nav-link" href="../index.html">FitZone</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="../index.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html">
+              <a class="nav-link" href="#">
                 <i
                   class="fa fa-shopping-cart"
                   style="font-size: 26px; color: #79d70f"
@@ -68,7 +75,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="login.html">
+              <a class="nav-link" href="#">
                 <i
                   class="fa fa-user-circle"
                   style="font-size: 24px; color: #79d70f"
@@ -79,30 +86,34 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <div class="container">
-        <div class="content">
-          <div class="right info-contact">
-            <div class="title">LOGIN</div>
-            <input class="email" placeholder="Email" />
-            <input class="password" placeholder="Password" type="password" />
-            <div class="err"></div>
-            <div class="submit-btn">SUBMIT</div>
-          </div>
-          <div class="left"></div>
-        </div>
-        <div class="loged-in">
-          Congratulations ! Your are loged in, and you just completed this
-          challenge !
-        </div>
-      </div>
+      <article class="shop_content">
+        <h1>Green Smothie</h1>
+
+        <img
+          src="../res/shop/Green-Smoothie.jpg"
+          class="inline-photo show-on-scroll"
+        />
+
+        <h1>Banana Oatmeal Pancakes</h1>
+        <img
+          src="../res/shop/bananaoatmealpancakes-.jpg"
+          class="inline-photo show-on-scroll"
+        />
+      </article>
+      <!-- Semantic Tag footer -->
+      <footer>
+        <span> © 2020 Fit Zone </span>
+      </footer>
     </main>
-    <script src="../js/login.js"></script>
+
+    <!-- JS file -->
+    <script src="../js/shop.js"></script>
     <script src="../js/jquery-3.3.1.slim.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/popper.min.js"></script>
-    <script src="../js/import.js"></script>
+
+    <!-- <script src="../js/import.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
   </body>
 </html>

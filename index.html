@@ -7,29 +7,19 @@
   <!-- CSS File -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- Fonts -->
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet" />
+
   <!-- Link to awesome font -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet">
+
   <!-- Import footer and contact -->
   <link href="./contact.html" rel="import" />
   <link href="./footer.html" rel="import" />
 
-  <!-- Service , calcul -->
-  <!-- Icons font CSS-->
-  <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-  <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-  <!-- Font special for pages-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS-->
-  <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-  <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-
-  <!-- Main CSS-->
-  <link href="css/calcul.css" rel="stylesheet" media="all">
+  <!--CSS pour la partie calcul IMC-->
+  <link href="css/calcul.css" rel="stylesheet">
 
 </head>
 
@@ -40,6 +30,7 @@
       <a class="navbar-brand" href="#">
         <img src="../res/logo_FZ.png" alt="logo" />
       </a>
+      <!-- Responsive Menu -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,45 +46,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#fitzone">FitZone</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Services
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="wellness.html">Bien-être</a>
-                <a class="dropdown-item" href="shop.html">Shop</a>
-              </div>
-            </li> -->
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li> -->
-
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/pages/shop.html">
               <i class="fa fa-shopping-cart" style="font-size: 26px; color: #79d70f"></i></a>
           </li>
-          
+
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/pages/login.html">
               <i class="fa fa-user-circle" style="font-size: 24px; color: #79d70f"></i></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
+
   <!-- Semantic Tag Main -->
   <main>
     <!--  Section Accueil -->
@@ -113,10 +82,6 @@
               <i class="fa fa-twitter"></i></a>
           </div>
         </div>
-        <!-- style="flex:2; text-align:end" -->
-        <!-- <div id="animated-bg" style="flex:2; text-align:end">
-            <img src="res/img_accueil-2.png">
-                </div> -->
       </div>
     </section>
 
@@ -124,7 +89,7 @@
     <section id="rencontre">
       <div class="container_2">
         <div class="box-3">
-          <div background-color: chartreuse">
+          <div>
             <img src="./res/bg/bg_1.jpeg" />
           </div>
           <div class="rencontre">
@@ -170,7 +135,6 @@
     <!-- Section FitZone -->
     <section id="fitzone">
       <div class="container_3">
-
         <div class="box-5">
           <h2 class="font_1" style="color: black">
             <span> Fit Zone </span>
@@ -195,130 +159,105 @@
       </div>
     </section>
 
-   
-
-      <div class="calcul">
-        <div class="page-wrapper  p-t-45 p-b-50">
-          <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-              <div class="card-heading">
-                <h2 class="title">Calculez votre Indice de Masse Corporelle (IMC)</h2>
-              </div>
-              <div class="card-body">
-                <form method="POST">
-                  <div class="form-row m-b-55">
-                    <div class="name">Nom</div>
-                    <div class="value">
-                      <div class="row " style="display: flex; ">
-                        <div class="col-2" style="margin-right: 15vw; ">
-                          <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="first_name" style="width: 18vw; ">
-                            <label class="label--desc">Prénom</label>
-                          </div>
+    <!-- Calcul IMC avec Bootstrap-->
+    <section id="imc">
+    <div class="calcul">
+      <div class="page-wrapper  p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+          <div class="card card-5">
+            <div class="card-heading">
+              <h2 class="title">Calculez votre Indice de Masse Corporelle (IMC)</h2>
+            </div>
+            <div class="card-body">
+              <form method="POST">
+                <div class="form-row m-b-55">
+                  <div class="name">Nom</div>
+                  <div class="value">
+                    <div class="row " style="display: flex; ">
+                      <div class="col-2" style="margin-right: 15vw; ">
+                        <div class="input-group-desc">
+                          <input class="input--style-5" type="text" name="first_name" style="width: 18vw; ">
+                          <label class="label--desc">Prénom</label>
                         </div>
-                        <div class="col-2">
-                          <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="last_name" style="width: 18vw; ">
-                            <label class="label--desc"> NOM </label>
-                          </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="input-group-desc">
+                          <input class="input--style-5" type="text" name="last_name" style="width: 18vw; ">
+                          <label class="label--desc"> NOM </label>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Poids et Longueur -->
-                  <div class="form-row m-b-55">
-                    <div class="name">Poids et Longueur</div>
-                    <div class="value">
-                      <div class="row " style="display: flex; ">
-                        <div class="col-2" style="margin-right: 15vw; ">
-                          <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="Poids" style="width: 18vw; ">
-                            <label class="label--desc">Poids(kg)</label>
-                          </div>
+                </div>
+                <!-- Poids et Longueur -->
+                <div class="form-row m-b-55">
+                  <div class="name">Poids et Longueur</div>
+                  <div class="value">
+                    <div class="row " style="display: flex; ">
+                      <div class="col-2" style="margin-right: 15vw; ">
+                        <div class="input-group-desc">
+                          <input class="input--style-5" type="text" name="Poids" style="width: 18vw; ">
+                          <label class="label--desc">Poids(kg)</label>
                         </div>
-                        <div class="col-2">
-                          <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="Longueur" style="width: 18vw; ">
-                            <label class="label--desc"> Longueur(cm) </label>
-                          </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="input-group-desc">
+                          <input class="input--style-5" type="text" name="Longueur" style="width: 18vw; ">
+                          <label class="label--desc"> Longueur(cm) </label>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="form-row">
-                    <div class="name">Age</div>
-                    <div class="value">
-                      <div class="input-group">
-                        <input class="input--style-5" type="text" name="age">
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="form-row">
-                    <div class="name">Services</div>
-                    <div class="value">
-                      <div class="input-group">
-                        <div class="rs-select2 js-select-simple select--no-search">
-                          <select name="subject">
-                            <option disabled="disabled" selected="selected">Choisissez le service</option>
-                            <option>One-on-one coaching</option>
-                            <option>ENTRAÎNEMENT PERSONNEL À DISTANCE</option>
-                            <option>RÉCUPÉRATION & RESTAURATION</option>
-                          </select>
-                          <div class="select-dropdown"></div>
-                        </div>
-                      </div>
-                  </div> -->
-                  <div class="form-row p-t-20">
-                    <label class="label label--block">Etes-vous déjà membre?</label>
-                    <div class="p-t-15">
-                      <label class="radio-container m-r-55">Oui
-                        <input type="radio" checked="checked" name="exist">
-                        <span class="checkmark"></span>
-                      </label>
-                      <label class="radio-container">Non
-                        <input type="radio" name="exist">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
+                </div>
+         
+                <div class="form-row p-t-20">
+                  <label class="label label--block">Etes-vous déjà membre?</label>
+                  <div class="p-t-15">
+                    <label class="radio-container m-r-55">Oui
+                      <input type="radio" checked="checked" name="exist">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="radio-container">Non
+                      <input type="radio" name="exist">
+                      <span class="checkmark"></span>
+                    </label>
                   </div>
-                  <div>
-                    <button class="btn btn--radius-2 btn--green" type="submit">Calculez</button>
-                  </div>
-                  <!-- Résultat -->
-                  <div class="resultat">
-                    <label class="label label--block">Votre Indice de Masse Corporelle (IMC) est : <span id="imc"></span></label>
-                    <label class="label label--block">Avis de notre expert: Votre corpulence est <span id="etatImc"></span></label>
-                    <label class="label label--block">Votre poids est <span id="rapportPoids"></span> 
+                </div>
+                <div>
+                  <button class="btn btn--radius-2 btn--green" type="submit">Calculez</button>
+                </div>
+                <!-- Résultat -->
+                <div class="resultat">
+                  <label class="label label--block">Votre Indice de Masse Corporelle (IMC) est : <span
+                      id="imc"></span></label>
+                  <label class="label label--block">Avis de notre expert: Votre corpulence est <span
+                      id="etatImc"></span></label>
+                  <label class="label label--block">Votre poids est <span id="rapportPoids"></span>
                     compte tenu de votre taille.</label>
-                    <label class="label label--block">Une alimentation équilibrée, sans excès de
+                  <label class="label label--block">Une alimentation équilibrée, sans excès de
                     matières grasses, et une activité physique régulière comme la marche, la natation ou le vélo vous
                     aideront à maintenir votre poids idéal.</label>
-                  </div>
-                  <div>
-                    <button class="btn btn--radius-2 btn--green" type="submit">découvrez nos services</button>
-                  </div>
-                </form>
-              </div>
+                </div>
+                <div>
+                  <button class="btn btn--radius-2 btn--green" type="submit"><a href ="pages/services.html">découvrez nos services</a></button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-     </div>
+      </div>
+    </div>
     </section>
   </main>
 
+  <!-- Script Bootstrp -->
   <script src="js/main.js"></script>
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
+  <!-- Script import html contact footer -->
   <script src="js/import.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
-
-  <!-- service, calcul JS-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <!-- Vendor JS-->
-  <script src="vendor/select2/select2.min.js"></script>
-  <script src="vendor/datepicker/moment.min.js"></script>
-  <script src="vendor/datepicker/daterangepicker.js"></script>
 
   <!-- Main JS-->
   <script src="js/calcul.js<script>
