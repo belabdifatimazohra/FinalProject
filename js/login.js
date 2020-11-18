@@ -10,8 +10,8 @@ btnLog.addEventListener("click", checkLog);
 //3. Ecrire la fonction de controle
 
 function checkLog() {
-  var displayIn = document.querySelector(".loged-in");
-  var displayErr = document.querySelector(".err");
+  let displayIn = document.querySelector(".loged-in");
+  let displayErr = document.querySelector(".err");
   console.log("Email: " + mail.value);
   console.log("Password: " + password.value);
   console.log(displayIn);
