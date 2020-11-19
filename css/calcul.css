@@ -147,30 +147,6 @@
 }
 
 /* ==========================================================================
-   #BOX-SIZING
-   ========================================================================== */
-/**
- * More sensible default box-sizing:
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* ==========================================================================
    #RESET
    ========================================================================== */
 /**
@@ -237,7 +213,8 @@ button {
   /* min-height: 100vh; */
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
+  justify-items: center;
 }
 
 body {
@@ -450,10 +427,6 @@ input {
   user-select: none;
 }
 
-/* Afficher les résultat */
-.resultat {
-  margin: 20px 0;
-}
 .radio-container input {
   position: absolute;
   opacity: 0;
@@ -571,24 +544,25 @@ input {
    #CARD
    ========================================================================== */
 .card {
-  -webkit-border-radius: 3px;
+  /* -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px; */
   background: #fff;
+  border: none;
 }
 
 .card-5 {
   background: #fff;
-  -webkit-border-radius: 10px;
+  /* -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15); */
 }
 
-.card-heading{
-  width:100%;
+.card-heading {
+  width: 100%;
 }
 .card-5 .card-heading {
   padding: 20px 0;

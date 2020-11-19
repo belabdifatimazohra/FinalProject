@@ -275,6 +275,12 @@ main {
   font: normal normal normal 26px/1.4em sans-serif;
   color: #253c57;
 }
+/* Afficher les résultat */
+.resultat {
+  margin: 20px 0;
+  /* display: none; */
+}
+
 .btn a {
   text-decoration: none;
   color: #ffffff;

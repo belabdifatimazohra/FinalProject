@@ -20,7 +20,7 @@
 
   <!--CSS pour la partie calcul IMC-->
   <link href="css/calcul.css" rel="stylesheet">
-
+  s
 </head>
 
 <body>
@@ -28,7 +28,7 @@
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark static-top" style="background-color: black">
       <a class="navbar-brand" href="#">
-        <img src="../res/logo_FZ.png" alt="logo" />
+        <img src="./res/logo_FZ.png" alt="logo" />
       </a>
       <!-- Responsive Menu -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -168,15 +168,8 @@
           </div>
         </div>
         <div class="page-wrapper  p-t-45 p-b-50">
-
-          <div>
-            <img src="/res/FitZone/imc.jpg" v alt="IMC" />
-          </div>
           <div class="wrapper wrapper--w790">
             <div class="card card-5">
-              <!-- <div class="card-heading">
-                  <h2 class="title">Calculez votre Indice de Masse Corporelle (IMC)</h2>
-                </div> -->
               <div class="card-body">
                 <form method="POST">
                   <div class="form-row m-b-55">
@@ -205,7 +198,7 @@
                       <div class="row " style="display: flex; ">
                         <div class="col-2" style="margin-right: 15vw; ">
                           <div class="input-group-desc">
-                            <input class="input--style-5" type="text" name="Poids" style="width: 18vw; ">
+                            <input class="input--style-5" type="text" name="Poids" id= "poids" style="width: 18vw; ">
                             <label class="label--desc">Poids(kg)</label>
                           </div>
                         </div>
@@ -233,7 +226,7 @@
                     </div>
                   </div>
                   <div>
-                    <button class="btn btn--radius-2 btn--green" type="submit">Calculez</button>
+                    <button class="btn btn--radius-2 btn--green " id="btnImc" >Calculez</button>
                   </div>
                   <!-- Résultat -->
                   <div class="resultat">
@@ -247,14 +240,18 @@
                       matières grasses, et une activité physique régulière comme la marche, la natation ou le vélo
                       vous
                       aideront à maintenir votre poids idéal.</label>
+                    <div>
+                      <button class="btn btn--radius-2 btn--green" type="submit"><a href="pages/services.html">découvrez
+                          nos services</a></button>
+                    </div>
                   </div>
-                  <div>
-                    <button class="btn btn--radius-2 btn--green" type="submit"><a href="pages/services.html">découvrez
-                        nos services</a></button>
-                  </div>
+
                 </form>
               </div>
             </div>
+          </div>
+          <div>
+            <img src="./res/FitZone/imc.jpg" v alt="IMC" />
           </div>
         </div>
       </div>
@@ -269,9 +266,7 @@
   <!-- Script import html contact footer -->
   <script src="js/import.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@webcomponents/html-imports@1.2.6/html-imports.min.js"></script>
-
-  <!-- Main JS-->
-  <script src="js/calcul.js<script>
+s
   
   </body>
 </html>
