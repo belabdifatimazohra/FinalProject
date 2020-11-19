@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  margin-top: 65px;
+  margin-top: 40px;
 }
 
 /* change the color of active or hovered links */
@@ -278,7 +278,7 @@ main {
 /* Afficher les résultat */
 .resultat {
   margin: 20px 0;
-  /* display: none; */
+  display: none;
 }
 
 .btn a {
@@ -338,13 +338,13 @@ footer {
 
 .font_1 {
   color: #79d70f;
-  font: normal 42px "Fredericka the Great", cursive;
+  font: normal 1px "Fredericka the Great", cursive;
   letter-spacing: 3px;
 }
 
 .font_2 {
   color: #79d70f;
-  font: normal 20px "Fredericka the Great", cursive;
+  font: normal 16px "Fredericka the Great", cursive;
   letter-spacing: 2px;
 }
 
@@ -375,52 +375,313 @@ footer {
   color: #68b0ab;
 }
 
+/* Medium devices (tablets with max width 768px ) */
+
+@media screen and (max-width: 768px) {
+}
+
 @media screen and (max-width: 600px) {
-  /* Accueil */
-  .accueil {
+  /* Log in item style */
+  .container {
     width: 100%;
+    height: 100vh;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    height: 90vh;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(31, 207, 155, 0.9360119047619048) 0%,
-      rgba(147, 230, 240, 1) 33%,
-      rgba(231, 219, 229, 1) 100%
-    );
+    background-color: #f0f3f7;
   }
 
-  .accueil img {
-    height: 300px;
+  .content {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
+    transition: 0.4s;
+  }
+
+  .right {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../res/img_login.jpeg");
+    background-position: center;
+    background-size: contain;
+  }
+  /* Cntact */
+  .info-contact input {
+    width: 80%;
+    font-family: inherit;
+    height: 50px;
+    margin: 0px;
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 12px;
+    margin: 20px 0px;
+  }
+
+  .submit-btn {
+    background-color: #79d70f;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    height: 50px;
+    width: 40%;
+    margin: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .err {
+    font-size: 12px;
+    color: red;
+    font-weight: 900;
+  }
+
+  .loged-in {
+    width: 60%;
+    height: 70%;
+    display: none;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: -2px 0px 33px 4px rgba(117, 117, 117, 1);
+    font-size: 35px;
+    transition: 0.4s;
+  }
+
+  /* Section accueil */
+  .accueil {
+    background-color: #000000;
+    width: 100%;
   }
 
   .div_accueil {
-    padding: 100px;
-    color: #253c57;
-    flex: 1;
+    width: 50%;
+    padding: 60px 50px;
+    color: #eeeeee;
+    font-family: "Fredericka the Great", cursive;
   }
 
   .div_accueil h3 {
-    font: normal normal bold 30px/1.4em "Cinzel Decorative", cursive;
+    font: normal normal bold 30px/1.4em "Fredericka the Great", cursive;
   }
 
   .div_accueil span {
     font-size: 15px;
   }
 
+  .social i.fa {
+    color: #79d70f;
+    width: 30px;
+    height: 30px;
+    border-radius: 60%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 4px;
+    background-color: #000;
+  }
+
+  #animated-bg {
+    background: url("../res/Accueil/bg1.jpg") no-repeat center center;
+    transition: background 3s;
+    max-height: 80vh;
+    max-width: 100%;
+  }
+
+  /*Section Rencontre moi */
+  .container_2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .box-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-3 img {
+    display: none;
+  }
+
+  .rencontre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    background: url("../res/bg/bg_Apropos.jpeg") no-repeat center center;
+    background-size: cover;
+  }
+
+  /* Section FitZone */
+  .container_3 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .box-4 {
+    display: none;
+  }
+
+  .box-5 {
+    background-color: #57b846;
+    text-align: center;
+  }
+
+  /* Calcul IMC et services */
+  .container_4 {
+    margin: 20px 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .img_imc {
+    display: none;
+  }
+  .calcul {
+    margin: 20px 0;
+  }
+  /* page de réservation*/
+  .section-reserve {
+    text-align: center;
+    font: normal normal normal 18px/1.8em sans-serif;
+    color: #253c57;
+  }
+
+  .reserve {
+    margin-top: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    height: auto;
+  }
+
+  .reserve > h1 {
+    font: normal normal normal 75px/1.4em sans-serif;
+  }
+
+  /* Page services */
+  .offres {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+  }
+
+  .offres > div {
+    display: block;
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 5%;
+  }
+
+  .offres > div > span {
+    font: normal normal normal 26px/1.4em sans-serif;
+    color: #253c57;
+  }
+  /* Afficher les résultat */
+  .resultat {
+    margin: 20px 0;
+    /* display: none; */
+  }
+
+  .btn a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* Section contact */
+  .contact {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #57b846;
+  }
+
+  .contact > div {
+    position: relative;
+    left: 0;
+    flex: 1;
+    padding: 2% 5%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact input,
+  textarea {
+    padding-left: 5px;
+    background-color: #e3f6f5;
+    font: normal normal normal 15px/1.4em sans-serif;
+    border-width: 0 0 2px 0;
+    color: #18293d;
+    border-style: solid;
+    border-color: rgba(37, 60, 87, 1);
+    padding: 3px;
+    margin: 5%;
+    max-width: 80%;
+    flex: 1;
+    text-overflow: ellipsis;
+    resize: none;
+  }
+
+  textarea {
+    min-width: 80%;
+    min-height: 100px;
+  }
+
+  footer {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #18293d;
+    font: normal normal normal 18px/1.4em sans-serif;
+  }
+
   .font_1 {
     color: #79d70f;
-    font: normal 30px "Roboto", sans-serif;
+    font: normal 15px "Fredericka the Great", cursive;
     letter-spacing: 3px;
   }
 
   .font_2 {
     color: #79d70f;
-    font: normal 10px "Roboto", sans-serif;
+    font: normal 15px "Fredericka the Great", cursive;
     letter-spacing: 2px;
   }
 
@@ -428,5 +689,26 @@ footer {
     color: #253c57;
     font: normal 12px "Roboto", sans-serif;
     letter-spacing: 3px;
+  }
+
+  .btn-lire {
+    border-radius: 2px;
+    margin-top: 20px;
+    font-size: 22px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+    color: #ffffff;
+    border: black;
+  }
+
+  .btn-lire:hover {
+    text-decoration: none;
+    display: flex;
+    flex-flow: wrap;
+    font-size: 20px;
+    color: #68b0ab;
   }
 }

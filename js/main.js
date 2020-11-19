@@ -34,12 +34,12 @@ backgroundSequence();
 // Calcul IMC
 const CalculImc = (e) => {
   e.preventDefault();
-  const poids = document.getElementById("poids").innerHTML;
-  console.log(poids);
-  // const imc = (poids * 10000) / (taille * taille);
-  // alert(imc);
-  // imc = Math.round(imc);
+  const poids = document.getElementById("poids").value;
+  const taille = document.getElementById("taille").value;
+  // Afficher le résultat
+  const imc = ((poids * 10000) / (taille * taille)).toFixed(1);
+  document.querySelector("#imc_span").style.color = "#57b846";
+  document.getElementById("imc_span").innerText = imc;
+  displayResultat.style.display = "block";
 };
-//addEventListener and display result using function calcul
-btnImc.addEventListner("click", (e) => calculeImc(e));
-// btnImc.addEventListener("click", calculImc);
+btnImc.addEventListener("click", (e) => CalculImc(e));
