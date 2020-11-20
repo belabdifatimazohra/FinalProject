@@ -38,8 +38,29 @@ const CalculImc = (e) => {
   const taille = document.getElementById("taille").value;
   // Afficher le résultat
   const imc = ((poids * 10000) / (taille * taille)).toFixed(1);
+  displayResultat.style.display = "block";
+  // Valeur IMC
   document.querySelector("#imc_span").style.color = "#57b846";
   document.getElementById("imc_span").innerText = imc;
-  displayResultat.style.display = "block";
+
+  // Avis des Experts
+  document.querySelector("#etatImc").style.color = "#57b846";
+
+  return imc <= 18.5
+    ? (document.getElementById("etatImc").innerText = "MAiGREUR")
+    : //document.getElementById("etatImc").innerText = "modérément excessif/Idéal"
+
+    imc > 18.5 && imc <= 24.9
+    ? (document.getElementById("etatImc").innerText = "CORPULENCE NORMALE")
+    : imc >= 25 && imc <= 29.9
+    ? (document.getElementById("etatImc").innerText = "SURPOIDS")
+    : imc >= 30 && imc <= 34.9
+    ? (document.getElementById("etatImc").innerText =
+        "OBESITE MODEREE (CLASSE 1)")
+    : imc >= 35 && imc <= 39.9
+    ? (document.getElementById("etatImc").innerText =
+        "OBESITE SEVERE (CLASSE 2)")
+    : (document.getElementById("etatImc").innerText =
+        "OBESITE MORBIDE (CLASSE 3)");
 };
 btnImc.addEventListener("click", (e) => CalculImc(e));
