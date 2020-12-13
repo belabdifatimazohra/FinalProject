@@ -338,7 +338,7 @@ footer {
 
 .font_1 {
   color: #79d70f;
-  font: normal 1px "Fredericka the Great", cursive;
+  font: normal 25px "Fredericka the Great", cursive;
   letter-spacing: 3px;
 }
 
@@ -513,7 +513,6 @@ footer {
   /*Section Rencontre moi */
   .container_2 {
     width: 100%;
-    margin: 10px 0;
   }
 
   .box-3 {
@@ -521,6 +520,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: -40px;
   }
 
   .box-3 img {
