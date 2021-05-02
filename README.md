@@ -32,9 +32,9 @@
 ## Launch FitZone 
 
 ```sh
- open index.html file in any browser
+ Open index.html file in any browser
 ```
-or use Live server and Open [http://localhost:5050](http://localhost:5050) to view it in the browser in case you have the ewtension on VS code.
+or use Live server and Open [http://localhost:5500](http://localhost:5500) to view it in the browser in case you have the extension on VS code.
 
 ## DEMO
 Visit https://fitzonebelabdi.netlify.app
